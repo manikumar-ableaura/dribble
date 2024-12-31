@@ -242,8 +242,8 @@
 
 .villa3 {
   display: flex;
-  justify-content: center;
-  margin: 0%;
+  justify-content: right;
+  margin: 5%;
 }
 
 .dupsix h2 {
@@ -251,6 +251,7 @@
   font-weight: lighter;
   text-align: right;
   margin-right: 100px;
+  margin-top: 80px;
   margin-bottom: 0px;
   line-height: 0px;
 }
