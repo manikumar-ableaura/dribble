@@ -242,8 +242,8 @@
 
 .villa3 {
   display: flex;
-  justify-content: right;
-  margin: 5%;
+  justify-content: center;
+  margin: 0%;
 }
 
 .dupsix h2 {
@@ -755,11 +755,11 @@
   }
 
   .villa3 {
-    display: flex;
-    justify-content: right;
-    margin: 0%;
+    display: flex  !important;
+    justify-content: right  !important;
+    margin: 0%  !important;
   }
-  
+
   .villa3 .relative {
     object-fit: cover;
     width: 100%;
@@ -773,15 +773,17 @@
   }
 
   .villa5 {
-    display: flex;
-    gap: 16px;
-    justify-content: right;
-    margin: 0%;
+    display: flex  !important;
+    gap: 16px  !important;
+    justify-content: center  !important;
+    margin: 0%  !important;
   }
+
   .villa5 .ding {
+    margin-top: 8%;
     width: 100%;
     height: auto;
-    margin-top: 30px;
+
   }
 
   .sixthblock h3 {
@@ -1094,11 +1096,11 @@
 
   .robo p {
     text-align: center;
-        font-size: 16px;
-        line-height: 0px;
-        margin-right: 0px;
-        margin-top: 35px;
-        color: rgb(212, 212, 212);
+    font-size: 16px;
+    line-height: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+    color: rgb(212, 212, 212);
 
 
   }
