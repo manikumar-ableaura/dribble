@@ -1,0 +1,56 @@
+.dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly; 
+    gap: 20px; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.dish {
+    text-align: center; 
+    max-width: 500px;
+    background-color: #f0eeee; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dish img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.dish h2 {
+    font-size: 24px;
+    font-family: cursive;
+    margin: 20px 0; 
+}
+
+.dish p {
+    font-size: 16px;
+    letter-spacing: 0.05rem; 
+    margin: 9px ;
+}
+
+
+@media (max-width: 768px) {
+    .dish {
+        max-width: 325px; 
+        padding: 10px;
+    }
+
+    .dish h2 {
+        font-size: 20px; 
+    }
+
+    .dish p {
+        font-size: 14px; 
+    }
+    .dishes {
+        flex-direction: column;
+        gap: 15px; 
+        padding: 15px;
+    }
+}

@@ -3,9 +3,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer>
-      <p>© 2024 Dribble</p>
-    </footer>
+    <p style={{ color: '#111', fontSize: '14px', fontFamily: 'cursive', textAlign: 'center', }}>
+      © 2025 Daniel Bob Henry David Marshall
+    </p>
   );
 }
 

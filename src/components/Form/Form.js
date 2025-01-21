@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Form.css";
 
-
-
 function Form() {
     const [formData, setFormData] = useState({
         firstName: "",

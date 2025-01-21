@@ -1,5 +1,6 @@
-// src/components/Content.js
+
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './content.css';
 import myimage from '../assets/my-image.jpg'
 import picture from '../assets/pic2.jpg'
@@ -15,10 +16,15 @@ import villa8 from '../assets/f.jpg'
 import villa9 from '../assets/g.jpg'
 import villa10 from '../assets/h.jpg'
 import villa11 from '../assets/last.jpg'
-import Form from './Form/Form';
+import Form from './Form/Form'
+
 
 function Content() {
+  const navigate = useNavigate();
 
+  const handlenavigation = () => {
+       navigate('/shopping');
+  };
 
 
   return (
@@ -34,7 +40,8 @@ function Content() {
         In this shot, we're providing a sneak peek of the ARCHIVTS homepage. Our focus for this homepage is to ensure that when users first visit the website.
         Stay tuned for more previews in the next shots! Available on Gumroad. Grab it now!
       </p>
-      <button className="gumroad-button">Gumroad</button>
+      
+      <button className="gumroad-button" onClick={handlenavigation}>Food items</button>
 
       <div className='secondblock'>
         <h2>TRANSFORMING<br></br> IDEAS ARCHITECTURE</h2>
@@ -54,7 +61,7 @@ function Content() {
             We bring visionary concepts to life through cutting-edge design and technical mastery</p>
           <div className='see'>
             <button> See More </button> </div></div>
-            
+
 
         <div className='picture'>
           <img
@@ -104,13 +111,13 @@ function Content() {
       </div>
 
       <br></br>
-      <div class="section">
+      <div className="section">
 
       </div>
 
-      <div class="divider"></div>
+      <div className="divider"></div>
 
-      <div class="section">
+      <div className="section">
 
       </div>
 
@@ -145,9 +152,9 @@ function Content() {
             src={villa3}
             alt="tentative" />
         </div>
-<div className='dupsix'>
-        <div><h2>PREMIUM KITCHEN</h2>
-          <p>Indonesia / Design Interior</p></div></div>
+        <div className='dupsix'>
+          <div><h2>PREMIUM KITCHEN</h2>
+            <p>Indonesia / Design Interior</p></div></div>
         {/* 
         <div className='villa4'>
 
@@ -168,7 +175,7 @@ function Content() {
             src={villa6}
             alt="tentative" />
 
-         </div><div className='robo'> <h4>LUXARY HOUSE NEW</h4>
+        </div><div className='robo'> <h4>LUXARY HOUSE NEW</h4>
           <p>United stated / Design Interior</p></div>
 
 
@@ -204,7 +211,7 @@ function Content() {
 
 
         <div className='eighthblock'>
-        <div class="divider1"></div>
+          <div className="divider1"></div>
 
           <button>Process</button>
           <div className='bun'><h3>Discuss what you want to<br></br> make happen if you have<br></br> in idea</h3>
@@ -284,8 +291,8 @@ function Content() {
           <h4>Website | Instagram | Behance | Gumroad</h4>
         </div>
 
-        <div class="divider9"></div>
-        <div class="divider10"></div>
+        <div className="divider9"></div>
+        <div className="divider10"></div>
 
         <Form />
       </div>
