@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dribble/static/css/main.03c0d328.css",
-    "main.js": "/dribble/static/js/main.498bdf17.js",
+    "main.css": "/dribble/static/css/main.a4e8a156.css",
+    "main.js": "/dribble/static/js/main.6bec36fd.js",
     "static/media/my-image.jpg": "/dribble/static/media/my-image.21596d1c50b739334ea4.jpg",
     "static/media/last.jpg": "/dribble/static/media/last.d7a06c4f6ece3c54713a.jpg",
     "static/media/a.jpg": "/dribble/static/media/a.3cb76c0f1d209701dc7e.jpg",
@@ -17,11 +17,11 @@
     "static/media/pic2.jpg": "/dribble/static/media/pic2.3cb76c0f1d209701dc7e.jpg",
     "static/media/t.jpg": "/dribble/static/media/t.3cb76c0f1d209701dc7e.jpg",
     "index.html": "/dribble/index.html",
-    "main.03c0d328.css.map": "/dribble/static/css/main.03c0d328.css.map",
-    "main.498bdf17.js.map": "/dribble/static/js/main.498bdf17.js.map"
+    "main.a4e8a156.css.map": "/dribble/static/css/main.a4e8a156.css.map",
+    "main.6bec36fd.js.map": "/dribble/static/js/main.6bec36fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.03c0d328.css",
-    "static/js/main.498bdf17.js"
+    "static/css/main.a4e8a156.css",
+    "static/js/main.6bec36fd.js"
   ]
 }
