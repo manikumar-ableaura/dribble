@@ -4,16 +4,13 @@ import './App.css';
 import Content from './components/Content';
 import Shopping from './components/API/Api';
 
-
 function App() {
   return (
-    <Router>
-     
+    <Router basename="/dribble">
       <Routes>
         <Route path="/" element={<Content />} />
         <Route path="/shopping" element={<Shopping />} />
-      </Routes> 
-
+      </Routes>
     </Router>
   );
 }

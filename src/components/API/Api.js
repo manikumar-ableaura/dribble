@@ -20,6 +20,8 @@ function Shopping() {
                 <div className="dish" key={index}>
                     <img src={item.image} alt={item.name} />
                     <h2>{item.name}</h2>
+                    <h5>{item.ingredients}</h5>
+                    <h6>{item.instructions}</h6>
                     <h4>{item.mealType}</h4>
                     <p>Rating: {item.rating}/10</p>
                 </div>

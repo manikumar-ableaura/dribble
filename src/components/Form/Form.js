@@ -11,26 +11,16 @@ function Form() {
         zip: "",
     });
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form Submitted:", formData);
-        // Add any additional logic here (e.g., API calls)
         alert("Form Submitted Successfully!");
     };
-   
 
     return (
-        
-        <div className="form-container">     
-           
+        <div className="form-container">
             <h2>Registration Form</h2>
             <form onSubmit={handleSubmit}>
                 <div className="sec1">
@@ -39,7 +29,8 @@ function Form() {
                         <input
                             type="text"
                             name="firstName"
-
+                            value={formData.firstName}
+                           
                         />
                     </div>
 
@@ -48,7 +39,8 @@ function Form() {
                         <input
                             type="text"
                             name="lastName"
-
+                            value={formData.lastName}
+                            
                         />
                     </div>
                 </div>
@@ -58,6 +50,8 @@ function Form() {
                         <input
                             type="tel"
                             name="mobile"
+                            value={formData.mobile}
+                           
                         />
                     </div>
 
@@ -66,7 +60,8 @@ function Form() {
                         <input
                             type="email"
                             name="email"
-
+                            value={formData.email}
+                           
                         />
                     </div>
                 </div>
@@ -76,7 +71,8 @@ function Form() {
                         <input
                             type="text"
                             name="city"
-
+                            value={formData.city}
+                            
                         />
                     </div>
 
@@ -85,7 +81,8 @@ function Form() {
                         <input
                             type="text"
                             name="zip"
-
+                            value={formData.zip}
+                           
                         />
                     </div>
                 </div>
@@ -98,10 +95,3 @@ function Form() {
 }
 
 export default Form;
-
-
-
-
-
-
-

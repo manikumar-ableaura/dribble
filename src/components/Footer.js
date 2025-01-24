@@ -3,8 +3,8 @@ import React from 'react';
 
 function Footer() {
   return (
-    <p style={{ color: '#111', fontSize: '14px', fontFamily: 'cursive', textAlign: 'center', }}>
-      © 2025 Daniel Bob Henry David Marshall
+    <p style={{ color: '#111', fontSize: '12px', fontFamily: 'monospace', textAlign: 'center', }}>
+      © 2025 David Marshall Daniel Augustine 
     </p>
   );
 }

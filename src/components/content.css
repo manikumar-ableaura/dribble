@@ -1,3 +1,4 @@
+
 .content {
   font-size: 26px;
   text-align: center;
@@ -571,24 +572,25 @@
 }
 
 .last button {
-  margin-right: 0px;
+  margin: auto;
+  display: block;
   padding: 10px 20px;
-  background-color: #000;
-  color: rgb(255, 255, 255);
-  border: 1px solid black;
-  border-radius: 99px;
+  background-color: #425945;
+  color: #ffffff;
+  border: .5px solid black;
+  border-radius: 15px;
   cursor: pointer;
 
 }
 
 .villa11 .captive {
-  width: 75%;
-  margin-top: 4%;
-  margin-bottom: 10%;
+  padding-top: 50px;
+  padding-bottom: 75px;
 }
 
 .graph {
   margin-top: -7%;
+  text-align: center;
 }
 
 .graph h2 {
@@ -623,6 +625,7 @@
 
 .dummy2 {
   margin-top: 3%;
+  text-align: center;
 }
 
 .dummy2 p {
@@ -640,6 +643,7 @@
 
 .dummy3 {
   margin-top: 3%;
+  text-align: center;
 }
 
 .dummy3 p {
@@ -1020,12 +1024,13 @@
   }
 
   .last button {
-    margin-right: 0px;
+    margin: auto;
+    display: block;
     padding: 10px 20px;
-    background-color: #000;
-    color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 50px;
+    background-color: #425945;
+    color: #ffffff;
+    border: .5px solid black;
+    border-radius: 15px;
     cursor: pointer;
 
   }
@@ -1087,10 +1092,6 @@
   .robo p {
     width: 100%;
     text-align: center;
-    margin-left: 9px;
-    margin-top: 30px;
-    margin-bottom: -500px;
-    margin-right: 0px;
     font-size: 16px;
     line-height: 1;
     color: rgb(179 167 167);
@@ -1111,7 +1112,7 @@
 
     height: 40px;
     margin-top: 40px;
-    margin-left: 130px;
+    margin-left: 100px;
     float: left;
     padding: 10px 20px;
     border-color: #e1dcdc;
