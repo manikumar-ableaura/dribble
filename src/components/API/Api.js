@@ -23,7 +23,7 @@ function Shopping() {
                     <h5>{item.ingredients}</h5>
                     <h6>{item.instructions}</h6>
                     <h4>{item.mealType}</h4>
-                    <p>Rating: {item.rating}/10</p>
+                    <p>Rating: {item.rating}/5</p>
                 </div>
             ))}
         </div>
