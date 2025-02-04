@@ -1,4 +1,3 @@
-
 .content {
   font-size: 26px;
   text-align: center;
@@ -14,7 +13,7 @@
 
 }
 
-.container h1{
+.container h1 {
   font-size: 40px;
   text-align: center;
   margin-top: 50px;
@@ -23,28 +22,51 @@
 .secondblock {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 100px;
   margin-bottom: 100px;
-
-
 }
 
 .secondblock h2 {
-  margin-top: 0%;
-  font-size: 48px;
+  font-size: 68px;
   text-align: left;
 }
 
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 .secondblock p {
-  font-size: 16px;
+  font-size: 20px;
+  padding-top: 50px;
   font-weight: lighter;
-  color: rgb(212, 212, 212);
-  text-align: left;
-  width: 20%;
+  color: rgb(133 127 127);
+  text-align: right;
+  width: 60%;
   line-height: normal;
-  font-family: poppins;
+  font-family: Poppins, sans-serif;
+  margin-bottom: 20px;
 }
+
+.arrow-circle {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-circle::after {
+  content: "▼";
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
 
 .container {
   margin-right: 70px;
@@ -100,21 +122,14 @@
   font-size: 16px;
 }
 
-/* .see button:hover {
-  background-color: #ffffff;
-} */
-
 .picture {
   height: 50%;
   width: 100%;
-
 }
 
 .picture .pics {
   height: 50%;
   width: 100%;
-
-
 }
 
 .gumroad-button {
@@ -202,6 +217,7 @@
 .villa1 .home {
   height: 185px;
   width: 225px;
+  border-radius: 16px;
 }
 
 .villa1 p {
@@ -237,6 +253,7 @@
 .villa2 .dome {
   height: 185px;
   width: 225px;
+  border-radius: 16px;
 }
 
 .villa2 p {
@@ -250,31 +267,28 @@
 .villa3 {
   display: flex;
   justify-content: right;
-  margin: 5%;
+
 }
 
 .dupsix h2 {
-  font-size: 30px;
-  font-weight: lighter;
+  font-weight: 500;
+  font-size: 42px;
   text-align: right;
-  margin-right: 100px;
-  margin-bottom: 0px;
-  line-height: 0px;
+  margin: 2px 0px;
 }
 
 .dupsix p {
   text-align: right;
-  font-size: 24px;
-  line-height: 20px;
-  margin-right: 100px;
+  font-size: 30px;
   color: rgb(212, 212, 212);
+  margin: 2px 0px;
 }
 
 .para {
   font-size: 35px;
   font-weight: lighter;
   text-align: left;
-  margin-right: 89px;
+  padding-right: 89px;
 }
 
 .para p {
@@ -293,40 +307,40 @@
 }
 
 .villa3 .relative {
-  position: relative;
-  top: 50px;
+
   height: 750px;
-  width: 730px;
+  width: 850px;
 }
 
-.sixthblock {
-  position: relative;
-
-}
 
 .new button {
   display: flex;
-  width: 8%;
-  justify-content: left;
+  width: 100px;
   align-items: center;
+  justify-content: center;
   height: 40px;
   margin-top: 40px;
-  padding: 10px 20px;
-  border-color: #000000;
   color: rgb(0, 0, 0);
   border: 1px solid black;
   border-radius: 99px;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
 }
 
+.sixthblock p {
+  width: 100%;
+  text-align: right;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 16px;
+  line-height: 2;
+  color: rgb(179 167 167);
+
+}
 
 .sixthblock h3 {
   margin-top: 2%;
   font-size: 35px;
-  text-align: left;
-  font-weight: 600;
-  line-height: 50px;
 }
 
 .villa4 {
@@ -353,22 +367,22 @@
 
 .villa5 {
   display: flex;
-  gap: 16px;
   justify-content: right;
   margin: 5%;
 }
 
 .villa5 .ding {
-  height: 500px;
-  width: 900px;
-  margin-top: -50px;
+  position: relative;
+  top: -930px;
+  margin-right: -87px;
+  height: 650px;
+  width: 1000px;
 }
 
 .paras h5 {
-  font-size: 30px;
-  font-weight: lighter;
+  font-size: 42px;
+  font-weight: 500;
   text-align: right;
-  margin-right: 0px;
   margin-bottom: 0px;
   line-height: 0px;
 }
@@ -376,31 +390,24 @@
 
 .paras {
   position: relative;
-  font-weight: lighter;
-  margin-right: 100px;
-  margin-top: -55px;
+  margin-top: -980px;
 }
 
 .paras p {
 
   text-align: right;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 20px;
   margin-right: 0px;
   color: rgb(212, 212, 212);
 }
 
-.villa6 {
-  position: absolute;
-  left: 0%;
-  line-height: 30px;
-}
-
 .villa6 .dung {
-  height: 450px;
-  width: 500px;
-  margin-left: 100px;
-  margin-top: 152px;
+  position: relative;
+  top: -300px;
+  width: 800px;
+
+
 }
 
 .villa6 h4 {
@@ -419,27 +426,58 @@
   color: rgb(212, 212, 212);
 }
 
-.seventhblock {
-  width: 100%;
-  position: relative;
+.over7 {
+  display: flex;
+  gap: 25%;
+  margin-top: -100px;
+}
 
+.villaa7 {
+  padding-top: 75px;
+}
+
+.villaa7 p {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.villaa7 .banng {
+  margin-top: 60px;
+}
+
+.villaa7 button {
+  height: 40px;
+  float: right;
+  padding: 10px 20px;
+  color: rgb(255 255 255);
+  background-color: black;
+  border-radius: 99px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .villa7 .bang {
-  height: 450px;
-  width: 700px;
+  height: 625px;
+  width: 600px;
   margin-right: 100px;
-  margin-top: 100px;
+
+}
+
+.seventhblock .rec {
+  height: 450px;
+}
+
+.villa7 h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 0px;
 
 }
 
 .villa7 p {
-  text-align: center;
-  margin-top: 25px;
-  margin-right: 50px;
-  font-size: 30px;
-  line-height: 35px;
-  color: #000;
+  font-size: 32px;
+  margin-top: -30px;
+  color: rgb(212, 212, 212);
 
 }
 
@@ -454,20 +492,14 @@
   cursor: pointer;
 }
 
-.eighthblock {
 
-  clear: both;
-}
-
-.eighthblock button {
+.pro {
 
   height: 40px;
   margin-top: 40px;
-  margin-left: 100px;
-  float: left;
   padding: 10px 20px;
-  border-color: #e1dcdc;
-  color: rgb(159 155 155);
+  background-color: #ffffff;
+  color: rgb(144 141 141);
   border: 2px solid #c9c4c4;
   border-radius: 99px;
   font-size: 15px;
@@ -479,49 +511,46 @@
   float: left;
   height: 500px;
   width: 1000px;
-  margin-left: 100px;
 }
 
 .bun {
   text-align: right;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   margin-top: 20px;
 }
 
 .bun h3 {
-  font-size: 35px;
+  font-size: 50px;
   text-align: left;
-  margin-top: 7%;
-  margin-left: -6%;
-  line-height: 1.5;
+  margin-top: 0px;
+  font-weight: 600;
 }
 
 .bun p {
   font-size: 20px;
   text-align: right;
   line-height: 1.5;
-  color: rgb(212, 212, 212);
+  color: rgb(133 127 127);
   margin-top: 100px;
   margin-right: 0px;
 }
 
 .bolt {
+  justify-content: space-between;
   display: flex;
-  gap: 1%;
+  gap: 10px;
 }
 
 .villa9 .plative {
   height: 500px;
-  width: 350px;
-  transform: rotateZ('angle');
-  transition: transform 0.5s ease-in-out;
+  width: 400px;
 }
 
 .villa10 .clative {
   height: 500px;
-  width: 300px;
+  width: 400px;
 }
 
 .ninthblock {
@@ -552,18 +581,18 @@
 }
 
 .child1 button {
-
-  height: 40px;
   margin-top: 40px;
   margin-left: 100px;
   float: left;
   padding: 10px 20px;
   border-color: #e1dcdc;
-  color: rgb(159 155 155);
+  color: rgb(98 93 93);
+  background-color: white;
   border: 2px solid #c9c4c4;
   border-radius: 99px;
   font-size: 15px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .last h1 {
@@ -572,34 +601,36 @@
 }
 
 .last button {
+  font-size: 16px;
   margin: auto;
   display: block;
   padding: 10px 20px;
-  background-color: #425945;
+  background-color: #000000;
   color: #ffffff;
   border: .5px solid black;
-  border-radius: 15px;
+  border-radius: 30px;
   cursor: pointer;
 
 }
 
 .villa11 .captive {
+  width: 100%;
+  height: 700px;
   padding-top: 50px;
-  padding-bottom: 75px;
+  border-radius: 50px;
 }
 
 .graph {
-  margin-top: -7%;
   text-align: center;
 }
 
 .graph h2 {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .graph p {
-  font-size: 24px;
-  color: rgb(159 155 155);
+  font-size: 35px;
+
 }
 
 .dummy button {
@@ -608,19 +639,16 @@
   margin: auto;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 50px;
   margin-top: 40px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   background-color: #000000;
-  border-color: #e7e7e9;
-  color: rgb(255, 255, 255);
-  font-weight: 600;
+  font-weight: 500;
   border: none;
   border-radius: 99999px;
   box-shadow: 0 2px 0 #fff, 0 4px 0 #ea64d9;
   cursor: pointer;
-  white-space: nowrap;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .dummy2 {
@@ -631,14 +659,13 @@
 .dummy2 p {
 
   line-height: 0;
-  font-size: 20px;
-  color: rgb(159 155 155);
+  font-size: 34px;
 }
 
 .dummy2 h3 {
-  background-color: rgb(247 242 234);
+
   display: inline;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 .dummy3 {
@@ -649,9 +676,11 @@
 .dummy3 p {
 
   line-height: 0;
-  font-size: 20px;
-  color: rgb(159 155 155);
+  font-size: 34px;
+}
 
+.dummy3 h4 {
+  font-size: 20px;
 }
 
 .divider9 {
@@ -672,44 +701,68 @@
   width: 100%;
 }
 
+.robo {
+  position: relative;
+  top: -300px;
+  margin: 2px 0px;
+}
+
 .robo h4 {
-  font-size: 24px;
-  font-weight: lighter;
-  text-align: left;
-  margin-right: 77px;
-  margin-top: 144px;
-  margin-bottom: -16px;
-  margin-left: 102px;
-  line-height: 0px;
+  font-size: 42px;
+  margin: 2px 0px;
 }
 
 .robo p {
-  width: 100%;
   text-align: left;
-  margin-left: 102px;
-  margin-top: 30px;
-  margin-bottom: -500px;
-  font-size: 16px;
-  line-height: 2;
+  font-size: 30px;
+  margin: 2px 0px;
   color: rgb(179 167 167);
 }
 
 .tomb {
-  margin-top: 555px;
+  position: relative;
+  padding-top: 480px;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 0;
+  width: calc(100% - 5px);
+  height: 3px;
+  background-color: rgb(240, 120, 210);
 }
 
 
+
+
 @media(max-width:768px) {
+  .over7 {
+    flex-direction: column;
+  }
+
+  .villaa7 .banng {
+    width: 100%;
+    border-radius: 16px;
+  }
+
   .container {
     margin-right: 0px;
     margin-left: 0px;
-
   }
 
   .secondblock {
 
     flex-direction: column;
-    margin: 50px;
+    margin: 0px;
   }
 
   .secondblock p {
@@ -721,7 +774,9 @@
   }
 
   .secondblock h2 {
-    font-size: 24px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 30px;
     text-align: center;
   }
 
@@ -746,6 +801,7 @@
   }
 
   .villa {
+    display: flex;
     flex-direction: column;
   }
 
@@ -760,14 +816,14 @@
   .new button {
     margin: auto;
     margin-top: 50px;
-    flex-direction: row;
-    width: 32%;
+
   }
 
   .villa3 .relative {
     width: 100%;
     height: auto;
     margin-top: 0px;
+    border-radius: 16px;
   }
 
   .villa4 .absolute {
@@ -775,29 +831,30 @@
     height: auto;
   }
 
+
+  .villa5 {
+    margin: 20px 0px;
+
+  }
+
   .villa5 .ding {
-    width: 100%;
+    padding-top: 620px;
+    margin-right: 0px;
     height: auto;
-    margin-top: 30px;
+    width: 100%;
+    border-radius: 16px;
   }
 
   .sixthblock h3 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     font-size: 23px;
     line-height: 30px;
     text-align: center;
   }
 
   .sixthblock p {
-    width: 100%;
-    text-align: center;
-    margin-left: 0px;
-    margin-top: 30px;
-    margin-right: 0px;
-    font-size: 16px;
-    line-height: 2;
-    color: rgb(179 167 167);
+    margin-top: 15px;
   }
 
 
@@ -805,17 +862,20 @@
     margin-top: 25px;
     margin-right: 0px;
     width: 100%;
+    border-radius: 16px;
   }
 
   .villa8 .lative {
     width: 100%;
     height: auto;
     margin: auto;
+    border-radius: 16px;
   }
 
   .villa9 .plative {
     width: 100%;
     height: auto;
+    border-radius: 16px;
   }
 
   .ninthblock {
@@ -825,6 +885,7 @@
   .villa10 .clative {
     width: 100%;
     height: auto;
+    border-radius: 16px;
   }
 
   .bolt {
@@ -849,6 +910,7 @@
   }
 
   .paras h5 {
+    font-weight: 400;
     width: 100%;
     text-align: right;
     font-size: 24px;
@@ -899,6 +961,7 @@
 
   .villa1 .home {
     width: 100%;
+    border-radius: 16px;
     height: auto;
   }
 
@@ -935,22 +998,20 @@
   }
 
   .bun h3 {
+    width: 100%;
     font-size: 24px;
     text-align: center;
     margin-top: 30px;
-    margin-left: 10px;
     line-height: 1.5;
   }
 
   .bun p {
-    width: 50%;
+    width: 100%;
     font-size: 15px;
     text-align: center;
-    line-height: 25px;
-    color: rgb(183 170 170);
+    line-height: 24px;
     margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 40px;
+
   }
 
   .para p {
@@ -964,10 +1025,9 @@
 
   .paras p {
 
-    text-align: center;
-    margin-left: 40px;
+    text-align: right;
     font-size: 16px;
-    line-height: 0px;
+    line-height: 20px;
     color: rgb(179 167 167);
   }
 
@@ -986,9 +1046,9 @@
   }
 
   .villa6 .dung {
-    height: auto;
-    margin: auto;
+    padding-top: 300px;
     width: 100%;
+    border-radius: 16px;
   }
 
   .villa6 h4 {
@@ -1014,13 +1074,16 @@
   }
 
   .tomb {
-    margin-top: 500px;
+    padding-top: 0px;
+
   }
 
   .villa11 .captive {
+    height: auto;
     width: 100%;
     margin-top: 14%;
     margin-bottom: 10%;
+    border-radius: 16px;
   }
 
   .last button {
@@ -1052,51 +1115,52 @@
   }
 
   .ninthblock p {
+    width: 100%;
     font-size: 15px;
-    font-weight: 600;
     text-align: center;
-    line-height: 1.5;
-    margin-top: 10px;
-    margin-right: 0px;
     color: rgb(159 155 155);
   }
 
-  .dupsix h2 {
+
+  .dupsix {
     margin: auto;
     font-size: 24px;
     font-weight: lighter;
     text-align: center;
-    margin-top: 70px;
-    line-height: 3px;
+
+  }
+
+  .dupsix h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: right;
+    margin: 2px 7px -15px;
   }
 
   .dupsix p {
-    text-align: center;
+    text-align: right;
     font-size: 16px;
-    line-height: 0px;
-    margin-right: 0px;
-    color: rgb(212, 212, 212);
+    margin-top: 0px;
+    margin: -18px -7px 1px;
   }
 
+
   .robo h4 {
-    width: 61%;
+    text-align: left;
+    align-items: center;
     font-size: 24px;
     font-weight: lighter;
-    text-align: left;
-    margin-top: 465px;
     margin-bottom: -15px;
-    margin-right: 0px;
-    line-height: 3px;
+
   }
 
   .robo p {
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     line-height: 1;
     color: rgb(179 167 167);
-
-
+    margin-top: 16px;
   }
 
   .child1 h2 {
@@ -1105,7 +1169,6 @@
     line-height: 1.5;
     text-align: center;
     margin-left: 1%;
-    margin-top: 128px;
   }
 
   .child1 button {
@@ -1144,5 +1207,88 @@
   .seventhblock {
     width: 100%;
     position: relative;
+  }
+
+  .over7 {
+    display: flex;
+    gap: 25%;
+    margin-top: -100px;
+  }
+
+  .villaa7 {
+    padding-top: 0px;
+  }
+
+  .villaa7 p {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .villaa7 .banng {
+    margin-top: 60px;
+  }
+
+  .villaa7 button {
+    height: 40px;
+    float: right;
+    padding: 10px 20px;
+    color: rgb(255 255 255);
+    background-color: black;
+    border-radius: 99px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .villa7 .bang {
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+  }
+
+  .graph h2 {
+    font-size: 20px;
+  }
+
+
+  .graph p {
+    font-size: 16px;
+
+  }
+
+  .dummy button {
+    width: 40%;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .dummy2 p {
+    font-size: 20px;
+  }
+
+  .dummy2 h3 {
+    font-size: 26px;
+  }
+
+  .dummy3 p {
+    font-size: 26px;
+  }
+
+  .dummy3 h4 {
+    font-size: 16px;
+  }
+
+  .villa7 h2 {
+    font-size: 24px;
+  }
+
+  .villa7 p {
+    font-size: 20px;
+  }
+  .villa img{
+    border-radius: 16px;
+  }
+  .picture .pics
+  {
+    border-radius: 16px;
   }
 }

@@ -23,7 +23,7 @@ function Content() {
   const navigate = useNavigate();
 
   const handlenavigation = () => {
-       navigate('/shopping');
+    navigate('/shopping');
   };
 
 
@@ -40,17 +40,18 @@ function Content() {
         In this shot, we're providing a sneak peek of the ARCHIVTS homepage. Our focus for this homepage is to ensure that when users first visit the website.
         Stay tuned for more previews in the next shots! Available on Gumroad. Grab it now!
       </p>
-      
-      <button className="gumroad-button" onClick={handlenavigation}>Food items</button>
 
-      <div className='secondblock'>
-        <h2>TRANSFORMING<br></br> IDEAS ARCHITECTURE</h2>
-        <p>We specialize in turning creative concepts<br></br> into immersive expereinces,blending innovation with precision for a digital</p>
+      <button className="gumroad-button" onClick={handlenavigation}>Food Menu</button>
+      <div className="secondblock">
+        <h2>TRANSFORMING<br /> IDEAS ARCHITECTURE</h2>
+        <div className="text-container">
+          <p>
+            We specialize in turning creative concepts<br />
+            into immersive experiences, blending innovation with precision for a digital
+          </p>
+          <div className="arrow-circle"></div>
+        </div>
       </div>
-
-
-      {/* <div className='About'>
-        <button> About us </button> </div> */}
 
       <div className='thirdblock'>
 
@@ -153,21 +154,10 @@ function Content() {
             alt="tentative" />
         </div>
         <div className='dupsix'>
-          <div><h2>PREMIUM KITCHEN</h2>
-            <p>Indonesia / Design Interior</p></div></div>
-        {/* 
-        <div className='villa4'>
+          <h2>PREMIUM KITCHEN</h2>
+          <p>Indonesia / Design Interior</p>
+        </div>
 
-          <img
-            className="absolute"
-            src={villa4}
-            alt="tentative" />
-        </div> */}
-
-
-        <div className='para'>
-          <h4></h4>
-          <p></p></div>
         <div className='villa6'>
 
           <img
@@ -175,8 +165,11 @@ function Content() {
             src={villa6}
             alt="tentative" />
 
-        </div><div className='robo'> <h4>LUXARY HOUSE NEW</h4>
-          <p>United stated / Design Interior</p></div>
+        </div>
+        <div className='robo'>
+          <h4>LANEWAY HOUSE</h4>
+          <p>Canada / Architecture</p>
+        </div>
 
 
         <div className='tomb'>
@@ -190,112 +183,120 @@ function Content() {
 
           <div className='paras'>
             <h5>BLOCK RESIDENCE</h5>
-            <p>United Stated / Architecture</p></div>
-
-
-
-        </div>
-
-        <div className='seventhblock'>
-
-          <div className='villa7'>
-            <img
-              className="bang"
-              src={villa7}
-              alt="tentative" />
-
-            <p>Are these all projects ? No,<br></br> click to see other projects </p></div>
-          <div className='seemore'>
-            <button>See more</button></div>
-        </div>
-
-
-        <div className='eighthblock'>
-          <div className="divider1"></div>
-
-          <button>Process</button>
-          <div className='bun'><h3>Discuss what you want to<br></br> make happen if you have<br></br> in idea</h3>
-
-
-
-            <p>Bring your vision to Life: Share your ideas, and we'll craft<br></br> a Digital Masterpiece Tailored to you unique vision</p></div>
-        </div>
-        <div className='bolt'>
-
-          <div className='villa8'>
-            <img
-              className="lative"
-              src={villa8}
-              alt="tentative" />
-          </div>
-
-          <div className='villa9'>
-            <img
-              className="plative"
-              src={villa9}
-              alt="loading" />
-          </div>
-
-          <div className='villa10'>
-            <img
-              className="clative"
-              src={villa10}
-              alt="loading" />
-          </div>
-
-        </div>
-
-        <div className='ninthblock'>
-
-          <div className='child1'><button>Testimonials</button>
-            <h2>Discover what<br></br> clients are saying about us</h2></div>
-          <div>
-            <p>Working with archivts was a<br></br>transformative experience.
-              Their<br></br> innovative approach to website <br></br>architecture not only met our<br></br> needs but elevated our brands to<br></br> new heights</p>
-          </div>
-          <div>
-            <p>Working with archivts was a<br></br>transformative experience.
-              Their<br></br> innovative approach to website <br></br>architecture not only met our<br></br> needs but elevated our brands to<br></br> new heights</p>
+            <p>United Stated / Architecture</p>
           </div>
         </div>
-
-
-        <div className='last'><h1>Looking For Someone Who Can <br></br> transforming Ideas?</h1>
-
-          <button>Let's Discuss</button></div>
-
-
-        <div className='villa11'>
+      </div>
+      <div className='over7'>
+        <div className='villa7'>
           <img
-            className="captive"
-            src={villa11}
+            className="bang"
+            src={villa7}
+            alt="tentative" />
+          <h2>LUXARY HOUSE NEW</h2>
+          <p>United Stated / Design interior</p>
+        </div>
+        <div className='villaa7'>
+          <img
+            className="banng"
+            src={villa4}
+            alt="tentative" />
+          <p>Are these all projects ? No,<br></br> click to see other projects </p>
+          <button>See more</button>
+
+        </div>
+
+      </div>
+
+      <button className='pro'>Process</button>
+      <div className='bun'>
+
+        <h3>Discuss what you want to<br></br> make happen if you have<br></br> in idea</h3>
+        <p>Bring your vision to Life: Share your ideas, and we'll craft<br></br> a Digital Masterpiece Tailored to you unique vision</p></div>
+
+
+      <div className='bolt'>
+
+        <div className='villa8'>
+          <img
+            className="lative"
+            src={villa8}
+            alt="tentative" />
+        </div>
+
+        <div className='villa9'>
+          <img
+            className="plative"
+            src={villa9}
             alt="loading" />
         </div>
 
-        <div className='graph'>
-          <h2>Thanks for checking it out!</h2>
-          <p>Interested in partnering with us? </p>
+        <div className='villa10'>
+          <img
+            className="clative"
+            src={villa10}
+            alt="loading" />
         </div>
 
-        <div className='dummy'>
-          <button>Send Inquiry</button>
-        </div>
-
-        <div className='dummy2'>
-          <p>Or drop us a line:</p>
-          <h3>hellodama@odama.io</h3>
-        </div>
-
-        <div className='dummy3'>
-          <p>Find more of our work on:</p>
-          <h4>Website | Instagram | Behance | Gumroad</h4>
-        </div>
-
-        <div className="divider9"></div>
-        <div className="divider10"></div>
-
-        <Form />
       </div>
+
+      <div className='ninthblock'>
+
+        <div className='child1'><button>Testimonials</button>
+          <h2>Discover what<br></br> clients are saying about us</h2></div>
+        <div>
+          <p>Working with archivts was a<br></br>transformative experience.
+            Their<br></br> innovative approach to website <br></br>architecture not only met our<br></br> needs but elevated our brands to<br></br> new heights</p>
+        </div>
+        <div>
+          <p>Working with archivts was a<br></br>transformative experience.
+            Their<br></br> innovative approach to website <br></br>architecture not only met our<br></br> needs but elevated our brands to<br></br> new heights</p>
+        </div>
+      </div>
+
+
+      <div className='last'><h1>Looking For Someone Who Can <br></br> Transforming Ideas?</h1>
+
+        <button>Let's Discuss</button></div>
+
+
+      <div className='villa11'>
+        <img
+          className="captive"
+          src={villa11}
+          alt="loading" />
+      </div>
+
+      <div className='graph'>
+        <h2>Thanks for checking it out!</h2>
+        <p>Interested in partnering with us? </p>
+      </div>
+
+      <div className='dummy'>
+        <button>Send Inquiry</button>
+      </div>
+
+      <div className='dummy2'>
+        <p>Or drop us a line:</p>
+        <h3>hellodama@odama.io</h3>
+      </div>
+
+      <div className="dummy3">
+        <p>Find more of our work on:</p>
+        <h4>
+          <span className="underline">&nbsp;Website</span> |
+          <span className="underline">&nbsp;Instagram</span> |
+          <span className="underline">&nbsp;Behance</span> |
+          <span className="underline">&nbsp;Food Menu</span>
+        </h4>
+      </div>
+
+
+      <div className="divider9"></div>
+      <div className="divider10"></div>
+
+      <Form />
+
     </div >
   );
 }
