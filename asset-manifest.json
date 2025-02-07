@@ -1,27 +1,15 @@
 {
   "files": {
-    "main.css": "/dribble/static/css/main.4bddd987.css",
-    "main.js": "/dribble/static/js/main.7633c963.js",
-    "static/media/my-image.jpg": "/dribble/static/media/my-image.21596d1c50b739334ea4.jpg",
+    "main.css": "/dribble/static/css/main.f025772e.css",
+    "main.js": "/dribble/static/js/main.00118041.js",
     "static/media/last.jpg": "/dribble/static/media/last.d7a06c4f6ece3c54713a.jpg",
-    "static/media/a.jpg": "/dribble/static/media/a.3cb76c0f1d209701dc7e.jpg",
-    "static/media/b.jpg": "/dribble/static/media/b.3cb76c0f1d209701dc7e.jpg",
-    "static/media/c.jpg": "/dribble/static/media/c.3cb76c0f1d209701dc7e.jpg",
-    "static/media/d.jpg": "/dribble/static/media/d.3cb76c0f1d209701dc7e.jpg",
-    "static/media/e.jpg": "/dribble/static/media/e.3cb76c0f1d209701dc7e.jpg",
-    "static/media/f.jpg": "/dribble/static/media/f.3cb76c0f1d209701dc7e.jpg",
-    "static/media/g.jpg": "/dribble/static/media/g.3cb76c0f1d209701dc7e.jpg",
-    "static/media/h.jpg": "/dribble/static/media/h.3cb76c0f1d209701dc7e.jpg",
-    "static/media/home.jpg": "/dribble/static/media/home.3cb76c0f1d209701dc7e.jpg",
-    "static/media/p.jpg": "/dribble/static/media/p.3cb76c0f1d209701dc7e.jpg",
     "static/media/pic2.jpg": "/dribble/static/media/pic2.3cb76c0f1d209701dc7e.jpg",
-    "static/media/t.jpg": "/dribble/static/media/t.3cb76c0f1d209701dc7e.jpg",
     "index.html": "/dribble/index.html",
-    "main.4bddd987.css.map": "/dribble/static/css/main.4bddd987.css.map",
-    "main.7633c963.js.map": "/dribble/static/js/main.7633c963.js.map"
+    "main.f025772e.css.map": "/dribble/static/css/main.f025772e.css.map",
+    "main.00118041.js.map": "/dribble/static/js/main.00118041.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bddd987.css",
-    "static/js/main.7633c963.js"
+    "static/css/main.f025772e.css",
+    "static/js/main.00118041.js"
   ]
 }
