@@ -1,20 +1,7 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './content.css';
-import myimage from '../assets/my-image.jpg'
 import picture from '../assets/pic2.jpg'
-import villa from '../assets/home.jpg'
-import villa1 from '../assets/p.jpg'
-import villa2 from '../assets/t.jpg'
-import villa3 from '../assets/a.jpg'
-import villa4 from '../assets/b.jpg'
-import villa5 from '../assets/c.jpg'
-import villa6 from '../assets/d.jpg'
-import villa7 from '../assets/e.jpg'
-import villa8 from '../assets/f.jpg'
-import villa9 from '../assets/g.jpg'
-import villa10 from '../assets/h.jpg'
 import villa11 from '../assets/last.jpg'
 import Form from './Form/Form'
 
@@ -32,7 +19,7 @@ function Content() {
 
       <img
         className="content-image"
-        src={myimage}
+        src='https://images.pexels.com/photos/29167620/pexels-photo-29167620/free-photo-of-scenic-view-of-grass-roof-huts-in-faroe-islands.jpeg?auto=compress&cs=tinysrgb&w=600https://images.pexels.com/photos/29547317/pexels-photo-29547317/free-photo-of-aerial-view-of-delhi-s-bustling-expressway.jpeg?auto=compress&cs=tinysrgb&w=600'
         alt="Preview of ARCHIVTS homepage"
       />
       <h1> Hello Folks!</h1>
@@ -61,7 +48,9 @@ function Content() {
           <p>Experience Archtectural ingeniuty: As a leading agecny in the field of architecture,
             We bring visionary concepts to life through cutting-edge design and technical mastery</p>
           <div className='see'>
-            <button> See More </button> </div></div>
+            <button> See More </button>
+          </div>
+        </div>
 
 
         <div className='picture'>
@@ -84,7 +73,7 @@ function Content() {
         <div className='villa'>
           <img
             className="home"
-            src={villa}
+            src='https://images.pexels.com/photos/30492749/pexels-photo-30492749/free-photo-of-cozy-winter-store-display-with-sled-and-wine-bottles.jpeg?auto=compress&cs=tinysrgb&w=600'
             alt="temporary" />
 
           <h4>Design Interior</h4>
@@ -102,7 +91,7 @@ function Content() {
         <div className='villa1'>
           <img
             className="home"
-            src={villa1}
+            src='https://images.pexels.com/photos/30560880/pexels-photo-30560880/free-photo-of-ornate-interior-of-historic-mosque-with-elaborate-ceiling.jpeg?auto=compress&cs=tinysrgb&w=600'
             alt="temporary" />
 
           <h4>Architecture</h4>
@@ -129,7 +118,7 @@ function Content() {
         <div className='villa2'>
           <img
             className="dome"
-            src={villa2}
+            src='https://media.istockphoto.com/id/1254796539/photo/green-living-room-with-green-sofa-coffee-tables-and-plants.jpg?s=2048x2048&w=is&k=20&c=FCq1HLZx-dn2eP-SM4rjA5ra_xGnEOF80xfqv6sJwnU='
             alt="temporary" />
 
           <h4>Property Interior</h4>
@@ -143,98 +132,98 @@ function Content() {
       <div className='sixthblock'>
 
         <div className='new'>
-          <button>Our Project</button></div>
-        <h3>Explore our projects, where each <br></br>project reflects innovation</h3>
+          <button>Our Project</button>
+          <h3 className='project-heading'>
+            Explore our projects, where each <br /> project reflects innovation
+          </h3>
 
-
-        <div className='villa3'>
-          <img
-            className="relative"
-            src={villa3}
-            alt="tentative" />
-        </div>
-        <div className='dupsix'>
-          <h2>PREMIUM KITCHEN</h2>
-          <p>Indonesia / Design Interior</p>
-        </div>
-
-        <div className='villa6'>
-
-          <img
-            className="dung"
-            src={villa6}
-            alt="tentative" />
 
         </div>
-        <div className='robo'>
-          <h4>LANEWAY HOUSE</h4>
-          <p>Canada / Architecture</p>
-        </div>
-
-
-        <div className='tomb'>
-          <div className='villa5'>
-
+        <div className="Main-interior">
+          <div className="no1">
             <img
-              className="ding"
-              src={villa5}
-              alt="tentative" />
+              className="img1"
+              src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Loading"
+            />
+
+            <div className="contents">
+              <img
+                className="img2"
+                src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Loading"
+              />
+              <h3>PREMIUM KITCHEN</h3>
+              <p>Indonesia / Design interior</p>
+            </div>
           </div>
 
-          <div className='paras'>
-            <h5>BLOCK RESIDENCE</h5>
-            <p>United Stated / Architecture</p>
+          <div className='no2'>
+            <div className='merge'>
+              <h3>LANEWAY HOUSE</h3>
+              <p> Canada / Architecture</p>
+            </div>
+            <div className='merge-in'>
+              <img
+                className='img3'
+                src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt='Loading'
+              />
+
+              <h3>BLOCK RESIDENCE</h3>
+              <p>United Stated / Architecture</p>
+            </div>
+          </div>
+
+          <div className='no3'>
+            <div className='merge1'>
+              <img
+                className='img4'
+                src='https://images.pexels.com/photos/271795/pexels-photo-271795.jpeg?auto=compress&cs=tinysrgb&w=600'
+                alt='Loading...' />
+              <h3>LUXARY HOUSE NEW</h3>
+              <p> United Stated / Design Interior</p>
+            </div>
+            <div className='merge2'>
+              <img className='img5'
+                src='https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=600'
+                alt='Loading...' />
+              <h4>Are these all projects? NO, Click to see other projects</h4>
+              <div className='see'>
+                <button> See More </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className='over7'>
-        <div className='villa7'>
-          <img
-            className="bang"
-            src={villa7}
-            alt="tentative" />
-          <h2>LUXARY HOUSE NEW</h2>
-          <p>United Stated / Design interior</p>
+      <div className='summaprocess'>
+        <button className='pro'>Process</button>
+        <div className='bun'>
+          <h3>Discuss what you want to<br></br> make happen if you have<br></br> in idea</h3>
+          <p>Bring your vision to Life: Share your ideas, and we'll craft<br></br> a Digital Masterpiece Tailored to you unique vision</p>
         </div>
-        <div className='villaa7'>
-          <img
-            className="banng"
-            src={villa4}
-            alt="tentative" />
-          <p>Are these all projects ? No,<br></br> click to see other projects </p>
-          <button>See more</button>
-
-        </div>
-
       </div>
-
-      <button className='pro'>Process</button>
-      <div className='bun'>
-
-        <h3>Discuss what you want to<br></br> make happen if you have<br></br> in idea</h3>
-        <p>Bring your vision to Life: Share your ideas, and we'll craft<br></br> a Digital Masterpiece Tailored to you unique vision</p></div>
-
 
       <div className='bolt'>
 
         <div className='villa8'>
           <img
             className="lative"
-            src={villa8}
+            src='https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=600'
             alt="tentative" />
         </div>
 
         <div className='villa9'>
           <img
             className="plative"
-            src={villa9}
+            src='https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=600'
             alt="loading" />
         </div>
 
         <div className='villa10'>
           <img
             className="clative"
-            src={villa10}
+            src='https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=600'
             alt="loading" />
         </div>
 
@@ -243,7 +232,7 @@ function Content() {
       <div className='ninthblock'>
 
         <div className='child1'><button>Testimonials</button>
-          <h2>Discover what<br></br> clients are saying about us</h2></div>
+          <h2>Discover what<br></br> clients are saying <br></br>about us</h2></div>
         <div>
           <p>Working with archivts was a<br></br>transformative experience.
             Their<br></br> innovative approach to website <br></br>architecture not only met our<br></br> needs but elevated our brands to<br></br> new heights</p>
