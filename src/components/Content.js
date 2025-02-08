@@ -19,7 +19,7 @@ function Content() {
 
       <img
         className="content-image"
-        src='https://images.pexels.com/photos/29167620/pexels-photo-29167620/free-photo-of-scenic-view-of-grass-roof-huts-in-faroe-islands.jpeg?auto=compress&cs=tinysrgb&w=600https://images.pexels.com/photos/29547317/pexels-photo-29547317/free-photo-of-aerial-view-of-delhi-s-bustling-expressway.jpeg?auto=compress&cs=tinysrgb&w=600'
+        src='https://images.pexels.com/photos/30512748/pexels-photo-30512748/free-photo-of-bookshelf-with-diverse-selection-of-books.jpeg?auto=compress&cs=tinysrgb&w=600'
         alt="Preview of ARCHIVTS homepage"
       />
       <h1> Hello Folks!</h1>

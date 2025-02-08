@@ -1,7 +1,7 @@
 .content-image {
   margin-top: 50px;
   width: 100%;
-  height: 600px;
+  height: 650px;
   display: block;
   margin-left: auto;
   margin-right: auto
@@ -14,7 +14,6 @@
   text-align: center;
   font-size: 36px;
   font-weight: 500;
-
 }
 
 .container h1 {
@@ -157,7 +156,7 @@
   border-radius: 99999px;
   box-shadow: 0 2px 0 #fff, 0 4px 0 #a3a2a2;
   cursor: pointer;
-  
+
   font-size: 16px;
 }
 
@@ -349,7 +348,6 @@
 }
 
 .no2 .img3 {
-  position: relative;
   padding: 100px 0px 0px;
   height: 540px;
   left: -145px;
@@ -735,9 +733,9 @@
 
   .secondblock p {
 
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
-    line-height: 24px;
+    line-height: 26px;
     padding-top: 10px;
   }
 
@@ -761,7 +759,7 @@
   }
 
   .thirdblock p {
-    margin: 10px auto -20px auto;
+    margin: 10px auto 50px auto;
     line-height: 24px;
     font-size: 14px;
     width: 75%;
@@ -1234,217 +1232,11 @@
   .picture .pics {
     border-radius: 16px;
   }
-}
 
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-  .project-heading {
-    font-size: 50px;
-  }
-
-  .no1 .img1 {
-    width: 40%;
-    height: 400px;
-    padding-top: 200px;
-    padding-left: 100px;
-  }
-}
-
-@media (max-width: 992px) {
-  .project-heading {
-    font-size: 40px;
-  }
-
-  .no1 {
-    flex-direction: column-reverse;
-    /* Stack elements vertically */
-    align-items: center;
-    /* Center items */
-  }
-
-  .no1 .img1 {
-    width: 50%;
-    height: 350px;
-    padding-top: 150px;
-    padding-left: 50px;
-  }
-
-  .no1 .img2 {
-    width: 85%;
-    /* Increase width */
-    height: auto;
-    /* Maintain aspect ratio */
-    padding-left: 50px;
-    /* Reduce padding */
-  }
-
-  .no1 h3 {
-    padding: 0px 80px;
-    /* Reduce side padding */
-    font-size: 28px;
-    /* Reduce font size */
-  }
-
-  .no1 p {
-    font-size: 16px;
-    margin-top: -20px;
-    /* Adjust spacing */
-  }
-
-  .no2 {
-    flex-direction: column;
-    /* Stack items vertically */
-    align-items: center;
-    /* Center align */
-  }
-
-  .no2 .img3 {
-    width: 100%;
-    /* Adjust width */
-    height: auto;
-    /* Maintain aspect ratio */
-    left: -150px;
-    /* Reduce negative positioning */
-  }
-
-  .no2 .merge {
-    padding-left: 0px;
-  }
-
-  .merge h3 {
-    margin-top: 0px;
-    font-size: 20px;
-  }
-
-  .merge p {
-    width: 100%;
-    margin-top: -30px;
-    font-size: 12px;
-    text-align: center;
-  }
-
-  .merge-in h3 {
-    left: -80px;
-    /* Reduce negative positioning */
-    font-size: 28px;
-    margin-bottom: 0px;
-    /* Slightly decrease font size */
-  }
-
-  .merge-in p {
-    padding-left: 50px;
-    /* Reduce padding */
-    font-size: 16px;
-    /* Slightly decrease font size */
-  }
-
-  .no3 .img4 {
-    width: 500px;
-    /* Reduce width */
-    height: 500px;
-    /* Reduce height */
-  }
-
-  .no3 {
-    gap: 3%;
-    /* Reduce gap */
-  }
-
-  .merge1 {
-    width: 100%;
-  }
-
-  .merge1 h3 {
-    font-size: 28px;
-    /* Reduce size for better fit */
-  }
-
-  .merge1 p {
-    font-size: 16px;
-    /* Reduce size for better readability */
-    margin-top: -20px;
-    /* Adjust spacing */
-  }
-
-  .merge2 {
-    width: 50%;
-    /* Slightly wider for better spacing */
-    align-items: center;
-    /* Center align content */
-  }
-
-  .merge2 h4 {
-    width: 350px;
-    font-size: 28px;
-    padding-right: 20px;
-  }
-
-  .pro {
-    font-size: 14px;
-    padding: 8px 18px;
-  }
-
-  .summaprocess {
-    margin-top: 0px;
-  }
-
-  .villa8 {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  .villa9 {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  .villa10 {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  .no3 .img5 {
-    width: 400px;
-    height: 300px;
-  }
-
-  .child1 button {
-    margin-left: 50px;
-    font-size: 14px;
-    padding: 8px 18px;
-  }
-
-  .child1 h2 {
-    width: 100%;
-    font-size: 28px;
-  }
-
-  .dummy3 p {
-    font-size: 16px;
-    line-height: 40px;
-  }
-
-  .content-image {
-    height: 500px;
-  }
-
-  .arrow-circle {
-    width: 45px;
-    height: 45px;
-    margin-right: 10px;
-  }
-
-  .see button {
-    margin: 100px 0px 0px 140px;
-    display: block;
-  }
-}
-
-@media (max-width: 768px) {
   .project-heading {
     font-size: 35px;
     text-align: center;
-    /* Center align on smaller screens */
+
   }
 
   .no1 .img1 {
@@ -1473,9 +1265,9 @@
 
   .no1 p {
     width: 75%;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
-    margin: -24px 0px 0px 0px;
+    margin: -17px 0px 0px 46px;
   }
 
   .no2 {
@@ -1517,6 +1309,7 @@
   }
 
   .merge-in p {
+    width: 100%;
     padding-left: 0px;
     text-align: center;
     font-size: 14px;
@@ -1573,8 +1366,7 @@
   }
 
   .pro {
-    display: block;
-    margin: auto;
+    margin: 30px 0px 0px 130px;
     font-size: 14px;
     padding: 0px 30px;
     height: 36px;
@@ -1633,11 +1425,181 @@
     justify-content: center;
   }
 
-  .see button {
-    margin: 50px 0px 50px 0px;
 
+  .content {
+    width: 100%;
+    font-size: 23px;
   }
 }
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .project-heading {
+    font-size: 50px;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+  .project-heading {
+    font-size: 40px;
+  }
+
+  .no1 {
+    flex-direction: column-reverse;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center items */
+  }
+
+
+  .no1 .img2 {
+    width: 85%;
+    /* Increase width */
+    height: auto;
+    /* Maintain aspect ratio */
+    padding-left: 50px;
+    /* Reduce padding */
+  }
+
+  .no1 h3 {
+    padding: 0px 80px;
+    /* Reduce side padding */
+    font-size: 28px;
+    /* Reduce font size */
+  }
+
+  .no2 {
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center align */
+  }
+
+  .no2 .img3 {
+    width: 100%;
+    /* Adjust width */
+    height: auto;
+    /* Maintain aspect ratio */
+    left: -150px;
+    /* Reduce negative positioning */
+  }
+
+  .no2 .merge {
+    padding-left: 0px;
+  }
+
+  .merge h3 {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .merge p {
+    width: 100%;
+    margin-top: -30px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+
+  .no3 .img4 {
+    width: 500px;
+    /* Reduce width */
+    height: 500px;
+    /* Reduce height */
+  }
+
+  .no3 {
+    gap: 3%;
+    /* Reduce gap */
+  }
+
+  .merge1 {
+    width: 100%;
+  }
+
+  .merge1 h3 {
+    font-size: 28px;
+    /* Reduce size for better fit */
+  }
+
+  .merge1 p {
+    font-size: 16px;
+    /* Reduce size for better readability */
+    margin-top: -20px;
+    /* Adjust spacing */
+  }
+
+  .merge2 {
+    width: 50%;
+    /* Slightly wider for better spacing */
+    align-items: center;
+    /* Center align content */
+  }
+
+  .merge2 h4 {
+    width: 350px;
+    font-size: 28px;
+    padding-right: 20px;
+  }
+
+  .summaprocess {
+    margin-top: 0px;
+  }
+
+  .villa8 {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .villa9 {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .villa10 {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .no3 .img5 {
+    width: 400px;
+    height: 300px;
+  }
+
+  .child1 button {
+    margin-left: 50px;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .child1 h2 {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .dummy3 p {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .content-image {
+    height: 500px;
+  }
+
+  .arrow-circle {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+
+
+}
+
+
+
 
 
 @media (max-width: 576px) {
@@ -1645,10 +1607,6 @@
     font-size: 26px;
   }
 
-  .no1 .img1 {
-    width: 80%;
-    padding-top: 50px;
-  }
 
   .no2 .merge {
     padding-left: 0px;
@@ -1677,12 +1635,6 @@
     /* Make smaller for small screens */
   }
 
-  .no1 p {
-    font-size: 14px;
-    padding: 0px 0px 0px 55px;
-
-  }
-
   .no2 .img3 {
     width: 100%;
     height: auto;
@@ -1706,17 +1658,7 @@
     text-align: center;
   }
 
-  .merge-in h3 {
-    font-size: 20px;
-    margin-bottom: 19px;
 
-  }
-
-  .merge-in p {
-    width: 100%;
-    font-size: 12px;
-    margin: -19px 0px 0px 0px;
-  }
 
   .no3 .img4 {
     width: 100%;
@@ -1755,11 +1697,6 @@
     width: 100%;
     padding-right: 0;
     text-align: center;
-  }
-
-  .pro {
-    display: block;
-    margin: 30px 0px 0px 150px;
   }
 
   .summaprocess {
@@ -1814,13 +1751,6 @@
     justify-content: center;
   }
 
-  .see button {
-    margin: 0px auto 0px;
-    width: 100%;
-    font-size: 14px;
-    padding: 12px 20px;
-
-  }
 }
 
 
@@ -1829,11 +1759,6 @@
     font-size: 24px;
   }
 
-  .no1 .img1 {
-    width: 100%;
-    height: auto;
-    padding-top: 30px;
-  }
 
   .no2 .merge {
     padding-left: 0px;
@@ -1846,7 +1771,7 @@
 
   .merge p {
     width: 100%;
-    margin-top: -20px;
+    margin-top: -15px;
     font-size: 12px;
     text-align: center;
   }

@@ -137,8 +137,8 @@
 @media (max-width: 480px) {
     .form-container {
         padding: 20px;
-        max-width: 95%;
-        margin-top: 30px;
+        max-width: 90%;
+        margin-top: 36px;
         box-shadow: none;
         border-width: 1px;
     }
