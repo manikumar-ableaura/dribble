@@ -36,7 +36,9 @@ function Content() {
             We specialize in turning creative concepts<br />
             into immersive experiences, blending innovation with precision for a digital
           </p>
-          <div className="arrow-circle"></div>
+          <div className='Arrowclass'>
+            <div className="arrow-circle"></div>
+          </div>
         </div>
       </div>
 

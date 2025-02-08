@@ -7,18 +7,22 @@
   margin-right: auto
 }
 
+.content {
+  display: block;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+
+}
+
 .container h1 {
   font-size: 60px;
   text-align: center;
   margin-top: 50px;
 }
 
-.container p {
-  margin: auto;
-  width: 54%;
-  font-size: 34px;
-  text-align: center;
-}
 
 .secondblock {
   display: flex;
@@ -36,7 +40,7 @@
 .text-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .secondblock p {
@@ -49,6 +53,10 @@
   line-height: 36px;
   font-family: Poppins, sans-serif;
   margin-bottom: 20px;
+}
+
+.Arrowclass {
+  align-self: end;
 }
 
 .arrow-circle {
@@ -140,16 +148,16 @@
   justify-content: center;
   align-items: center;
   height: 40px;
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 10px 20px;
-  background-color: #f7defc;
+  background-color: #d7e0d8;
   border-color: #e7e7e9;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 99999px;
-  box-shadow: 0 2px 0 #fff, 0 4px 0 #999999;
+  box-shadow: 0 2px 0 #fff, 0 4px 0 #a3a2a2;
   cursor: pointer;
-  white-space: nowrap;
+  
   font-size: 16px;
 }
 
@@ -226,11 +234,9 @@
 }
 
 .villa1 p {
-  margin: 0%;
-  width: 19%;
+  width: 20%;
   font-size: 20px;
   font-weight: bold;
-  text-align: left;
 }
 
 .divider {
@@ -260,11 +266,9 @@
 }
 
 .villa2 p {
-  margin: 0%;
-  width: 19%;
+  width: 20%;
   font-size: 20px;
   font-weight: bold;
-  text-align: left;
 }
 
 .project-heading {
@@ -310,6 +314,10 @@
   width: 100%;
 }
 
+.contents p {
+  margin: -24px 0px 0px -84px;
+}
+
 .no1 .img2 {
   padding-left: 135px;
   width: 73%;
@@ -326,7 +334,7 @@
 }
 
 .no1 p {
-  padding-left: 85px;
+  padding: 0px 150px 0px 0px;
   margin-top: -30px;
   font-size: 18px;
   text-align: right;
@@ -343,13 +351,13 @@
 .no2 .img3 {
   position: relative;
   padding: 100px 0px 0px;
-  width: 120%;
   height: 540px;
-  left: -310px;
+  left: -145px;
 
 }
 
 .no2 .merge {
+  width: 100%;
   padding-left: 150px;
 }
 
@@ -366,6 +374,7 @@
 }
 
 .merge-in {
+  width: 100%;
   text-align: right;
 }
 
@@ -377,7 +386,7 @@
 }
 
 .merge-in p {
-  padding-left: 90px;
+  padding: 0px 145px 0px 0px;
   text-align: right;
   margin-top: -30px;
   font-size: 18px;
@@ -762,6 +771,7 @@
   .villa {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .villa1 {
@@ -900,6 +910,7 @@
   }
 
   .villa p {
+    width: 100%;
     text-align: center;
     font-size: 21px;
   }
@@ -915,7 +926,10 @@
   }
 
   .villa1 p {
-    width: 100%;
+    width: 75%;
+    font-size: 16px;
+    text-align: center;
+    margin: -25px 0px 0px 50px;
   }
 
   .villa2 .dome {
@@ -928,8 +942,10 @@
   }
 
   .villa2 p {
-    width: 100%;
+    width: 75%;
+    font-size: 16px;
     text-align: center;
+    margin: -20px 0px 0px 50px;
   }
 
   .About h2 {
@@ -1038,9 +1054,9 @@
 
   .ninthblock p {
     width: 100%;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
-    color: rgb(159 155 155);
+    color: rgb(0, 0, 0);
   }
 
 
@@ -1210,6 +1226,8 @@
   }
 
   .villa img {
+    width: 100%;
+    object-fit: cover;
     border-radius: 16px;
   }
 
@@ -1405,6 +1423,21 @@
     font-size: 16px;
     line-height: 40px;
   }
+
+  .content-image {
+    height: 500px;
+  }
+
+  .arrow-circle {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+
+  .see button {
+    margin: 100px 0px 0px 140px;
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1415,18 +1448,18 @@
   }
 
   .no1 .img1 {
-    width: 60%;
+    width: 100%;
     height: auto;
     /* Keeps aspect ratio */
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 0;
   }
 
   .no1 .img2 {
-    width: 95%;
+    width: 100%;
     /* Almost full width */
     height: auto;
-    padding-left: 20px;
+    padding-left: 0px;
     /* Further reduce padding */
   }
 
@@ -1439,20 +1472,19 @@
   }
 
   .no1 p {
-    font-size: 14px;
+    width: 75%;
+    font-size: 16px;
     text-align: center;
-    margin-top: -10px;
+    margin: -24px 0px 0px 0px;
   }
 
   .no2 {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    /* Add spacing between stacked items */
   }
 
   .no2 .img3 {
-    width: 90%;
+    width: 100%;
     height: auto;
     left: 0px;
     /* Reset position */
@@ -1471,28 +1503,24 @@
 
   .merge p {
     width: 100%;
-    margin-top: -30px;
-    font-size: 12px;
+    margin-top: -20px;
+    font-size: 14px;
     text-align: center;
   }
 
   .merge-in h3 {
     left: 0px;
-    /* Center text */
     text-align: center;
-    /* Align text properly */
     font-size: 24px;
-    margin-bottom: 0px;
-    /* Reduce font size */
+    margin-bottom: 24px;
+
   }
 
   .merge-in p {
     padding-left: 0px;
-    /* Remove padding for better alignment */
     text-align: center;
-    /* Center align text */
     font-size: 14px;
-    /* Reduce font size */
+    margin-top: -24px;
   }
 
   .no3 .img4 {
@@ -1527,7 +1555,7 @@
     /* Optimize for smaller screens */
     text-align: center;
     /* Center align for better UI */
-    margin: -23px 0px 0px 170px;
+    margin: -23px 0px 0px 0px;
   }
 
   .merge2 {
@@ -1539,16 +1567,18 @@
   }
 
   .merge2 h4 {
-    width: 100%;
     font-size: 24px;
     padding-right: 0;
     text-align: center;
   }
 
   .pro {
+    display: block;
+    margin: auto;
     font-size: 14px;
-    padding: 6px 16px;
+    padding: 0px 30px;
     height: 36px;
+
   }
 
   .summaprocess {
@@ -1587,12 +1617,32 @@
     width: 100%;
     margin-left: 0;
   }
+
+  .content-image {
+    height: 400px;
+  }
+
+  .arrow-circle {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  .see {
+    display: flex;
+    justify-content: center;
+  }
+
+  .see button {
+    margin: 50px 0px 50px 0px;
+
+  }
 }
 
 
 @media (max-width: 576px) {
   .project-heading {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .no1 .img1 {
@@ -1628,14 +1678,9 @@
   }
 
   .no1 p {
-    font-size: 12px;
-    padding-left: 0px;
-    /* Remove extra padding */
-  }
+    font-size: 14px;
+    padding: 0px 0px 0px 55px;
 
-  .no2 {
-    gap: 15px;
-    /* Reduce gap for smaller screens */
   }
 
   .no2 .img3 {
@@ -1649,36 +1694,34 @@
   }
 
   .merge h3 {
+    text-align: center;
     margin-top: 0px;
     font-size: 20px;
   }
 
   .merge p {
     width: 100%;
-    margin-top: -30px;
+    margin-top: -20px;
     font-size: 12px;
     text-align: center;
   }
 
   .merge-in h3 {
     font-size: 20px;
-    margin-bottom: 0px;
-    /* Make text smaller */
+    margin-bottom: 19px;
+
   }
 
   .merge-in p {
+    width: 100%;
     font-size: 12px;
-    /* Further reduce font size */
-    margin-top: 0px;
-    margin-bottom: 20px;
-    /* Improve spacing */
+    margin: -19px 0px 0px 0px;
   }
 
   .no3 .img4 {
     width: 100%;
-    /* Ensure full width */
     height: 350px;
-    /* Keep a reasonable height */
+    margin-top: 15px;
   }
 
   .no3 {
@@ -1698,7 +1741,7 @@
   .merge1 p {
     font-size: 12px;
     /* Optimize for small screens */
-    margin: -20px 0px 0px 85px;
+    margin: -20px 0px 0px 0px;
   }
 
   .merge2 {
@@ -1716,7 +1759,7 @@
 
   .pro {
     display: block;
-    margin: 30px 0px 0px 145px;
+    margin: 30px 0px 0px 150px;
   }
 
   .summaprocess {
@@ -1754,7 +1797,32 @@
     font-size: 14px;
     line-height: 30px;
   }
+
+
+  .content-image {
+    height: auto;
+  }
+
+  .arrow-circle {
+    width: 35px;
+    height: 35px;
+    margin-right: 6px;
+  }
+
+  .see {
+    display: flex;
+    justify-content: center;
+  }
+
+  .see button {
+    margin: 0px auto 0px;
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 20px;
+
+  }
 }
+
 
 @media (max-width: 400px) {
   .project-heading {
@@ -1762,7 +1830,7 @@
   }
 
   .no1 .img1 {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding-top: 30px;
   }
