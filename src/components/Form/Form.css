@@ -5,7 +5,7 @@
         -5px -5px 10px rgba(0, 0, 0, 0.2);
     margin: auto;
     margin-top: 50px;
-    width: 50%;
+    width: 75%;
     color: slategray;
     box-sizing: border-box;
 
@@ -25,11 +25,9 @@
 .sec1 {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     font-weight: bold;
-    text-align: left;
-    line-height: 25px;
-}
+    }
 
 
 

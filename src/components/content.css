@@ -8,12 +8,13 @@
 }
 
 .content {
-  display: block;
   margin: auto;
-  width: 50%;
+  display: block;
+  width: 55%;
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 500;
+  line-height: 40px;
 }
 
 .container h1 {
@@ -107,6 +108,9 @@
 
 }
 
+.thirdblock h2{
+  width: 100%;
+}
 .thirdblock p {
   margin: 0;
   font-size: 20px;
@@ -271,10 +275,8 @@
 }
 
 .project-heading {
-  font-size: 60px;
-  text-align: l;
-  line-height: 1.2;
-  word-wrap: break-word;
+  font-size: 40px;
+
 }
 
 .new button {
@@ -348,9 +350,10 @@
 }
 
 .no2 .img3 {
-  padding: 100px 0px 0px;
+  position: relative;
   height: 540px;
   left: -145px;
+  padding: 100px 0 0;
 
 }
 
@@ -733,7 +736,7 @@
 
   .secondblock p {
 
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     line-height: 26px;
     padding-top: 10px;
@@ -1264,6 +1267,7 @@
   }
 
   .no1 p {
+    padding: 0px;
     width: 75%;
     font-size: 14px;
     text-align: center;
@@ -1279,9 +1283,7 @@
     width: 100%;
     height: auto;
     left: 0px;
-    /* Reset position */
     padding-top: 50px;
-    /* Reduce padding */
   }
 
   .no2 .merge {
@@ -1289,8 +1291,9 @@
   }
 
   .merge h3 {
-    margin-top: 0px;
+    margin: 0px 0px 15px 0px;
     font-size: 20px;
+    text-align: center;
   }
 
   .merge p {
@@ -1310,7 +1313,7 @@
 
   .merge-in p {
     width: 100%;
-    padding-left: 0px;
+    padding: 0px 0px 0px 0px;
     text-align: center;
     font-size: 14px;
     margin-top: -24px;
@@ -1374,7 +1377,7 @@
   }
 
   .summaprocess {
-    margin-top: 0px;
+    margin-top: 100px;
   }
 
   .villa8 {
@@ -1478,23 +1481,12 @@
     /* Center align */
   }
 
-  .no2 .img3 {
-    width: 100%;
-    /* Adjust width */
-    height: auto;
-    /* Maintain aspect ratio */
-    left: -150px;
-    /* Reduce negative positioning */
-  }
+
 
   .no2 .merge {
     padding-left: 0px;
   }
 
-  .merge h3 {
-    margin-top: 0px;
-    font-size: 20px;
-  }
 
   .merge p {
     width: 100%;
@@ -1543,10 +1535,6 @@
     width: 350px;
     font-size: 28px;
     padding-right: 20px;
-  }
-
-  .summaprocess {
-    margin-top: 0px;
   }
 
   .villa8 {
@@ -1635,21 +1623,12 @@
     /* Make smaller for small screens */
   }
 
-  .no2 .img3 {
-    width: 100%;
-    height: auto;
-    padding-top: 20px;
-  }
+
 
   .no2 .merge {
     padding-left: 0px;
   }
 
-  .merge h3 {
-    text-align: center;
-    margin-top: 0px;
-    font-size: 20px;
-  }
 
   .merge p {
     width: 100%;
@@ -1697,10 +1676,6 @@
     width: 100%;
     padding-right: 0;
     text-align: center;
-  }
-
-  .summaprocess {
-    margin-top: 0px;
   }
 
   .villa8 {
@@ -1764,10 +1739,7 @@
     padding-left: 0px;
   }
 
-  .merge h3 {
-    margin-top: 0px;
-    font-size: 20px;
-  }
+
 
   .merge p {
     width: 100%;
