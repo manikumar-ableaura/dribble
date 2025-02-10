@@ -240,7 +240,7 @@ function Content() {
             Their<br></br> innovative approach to website <br></br>architecture not only met our<br></br> needs but elevated our brands to<br></br> new heights</p>
         </div>
         <div>
-          <p>Working with archivts was a<br></br>transformative experience.
+          <p> Archivts with Working was a<br></br>experience transformation .
             Their<br></br> innovative approach to website <br></br>architecture not only met our<br></br> needs but elevated our brands to<br></br> new heights</p>
         </div>
       </div>
