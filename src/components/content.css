@@ -108,9 +108,10 @@
 
 }
 
-.thirdblock h2{
+.thirdblock h2 {
   width: 100%;
 }
+
 .thirdblock p {
   margin: 0;
   font-size: 20px;
@@ -757,14 +758,14 @@
 
   .thirdblock h2 {
     line-height: normal;
-    font-size: 25px;
-    margin: 42px;
+    font-size: 28px;
+    margin: 100px 0px 0px 0px;
   }
 
   .thirdblock p {
     margin: 10px auto 50px auto;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 16px;
     width: 75%;
     text-align: center;
   }
@@ -785,7 +786,7 @@
 
   .new button {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 46px;
 
   }
 
@@ -877,8 +878,7 @@
   }
 
   .About button {
-    margin: auto;
-    margin-top: -15px;
+    display: none;
   }
 
   .see button {
@@ -901,7 +901,7 @@
   }
 
   .service h2 {
-    font-size: 23px;
+    font-size: 26px;
     margin-top: 50px;
     text-align: center;
   }
@@ -928,7 +928,7 @@
 
   .villa1 p {
     width: 75%;
-    font-size: 16px;
+    font-size:20px;
     text-align: center;
     margin: -25px 0px 0px 50px;
   }
@@ -944,7 +944,7 @@
 
   .villa2 p {
     width: 75%;
-    font-size: 16px;
+    font-size: 19px;
     text-align: center;
     margin: -20px 0px 0px 50px;
   }
@@ -961,19 +961,21 @@
 
   .bun h3 {
     width: 100%;
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
     margin-top: 30px;
     line-height: 1.5;
   }
 
   .bun p {
-    width: 100%;
-    font-size: 15px;
+    display: block;
+    margin: auto;
+    width: 70%;
+    font-size: 20px;
     text-align: center;
-    line-height: 24px;
-    margin-top: 0px;
-
+    line-height: 37px;
+   
+   
   }
 
   .para p {
@@ -1237,7 +1239,7 @@
   }
 
   .project-heading {
-    font-size: 35px;
+    font-size: 24px;
     text-align: center;
 
   }
@@ -1271,7 +1273,7 @@
     width: 75%;
     font-size: 14px;
     text-align: center;
-    margin: -17px 0px 0px 46px;
+    margin: -24px 0px 0px 46px;
   }
 
   .no2 {
@@ -1292,13 +1294,13 @@
 
   .merge h3 {
     margin: 0px 0px 15px 0px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
   }
 
   .merge p {
     width: 100%;
-    margin-top: -20px;
+    margin-top: -16px;
     font-size: 14px;
     text-align: center;
   }
@@ -1341,17 +1343,16 @@
 
   .merge1 h3 {
     font-size: 24px;
-    /* Adjust for readability */
     text-align: center;
-    /* Center align for better UI */
+    margin-bottom: 20px;
+   
   }
 
   .merge1 p {
     font-size: 14px;
-    /* Optimize for smaller screens */
     text-align: center;
-    /* Center align for better UI */
-    margin: -23px 0px 0px 0px;
+    margin-top: -16px;
+   
   }
 
   .merge2 {
@@ -1369,7 +1370,8 @@
   }
 
   .pro {
-    margin: 30px 0px 0px 130px;
+   display: block;
+   margin: auto;
     font-size: 14px;
     padding: 0px 30px;
     height: 36px;
@@ -1431,24 +1433,15 @@
 
   .content {
     width: 100%;
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 
 
 /* Responsive adjustments */
-@media (max-width: 1200px) {
-  .project-heading {
-    font-size: 50px;
-  }
-
-
-}
 
 @media (max-width: 992px) {
-  .project-heading {
-    font-size: 40px;
-  }
+ 
 
   .no1 {
     flex-direction: column-reverse;
@@ -1467,13 +1460,6 @@
     /* Reduce padding */
   }
 
-  .no1 h3 {
-    padding: 0px 80px;
-    /* Reduce side padding */
-    font-size: 28px;
-    /* Reduce font size */
-  }
-
   .no2 {
     flex-direction: column;
     /* Stack items vertically */
@@ -1485,14 +1471,6 @@
 
   .no2 .merge {
     padding-left: 0px;
-  }
-
-
-  .merge p {
-    width: 100%;
-    margin-top: -30px;
-    font-size: 12px;
-    text-align: center;
   }
 
 
@@ -1510,18 +1488,6 @@
 
   .merge1 {
     width: 100%;
-  }
-
-  .merge1 h3 {
-    font-size: 28px;
-    /* Reduce size for better fit */
-  }
-
-  .merge1 p {
-    font-size: 16px;
-    /* Reduce size for better readability */
-    margin-top: -20px;
-    /* Adjust spacing */
   }
 
   .merge2 {
@@ -1591,21 +1557,13 @@
 
 
 @media (max-width: 576px) {
-  .project-heading {
-    font-size: 26px;
-  }
 
 
   .no2 .merge {
     padding-left: 0px;
   }
 
-  .merge p {
-    width: 100%;
-    margin-top: -30px;
-    font-size: 12px;
-    text-align: center;
-  }
+ 
 }
 
 @media (max-width: 480px) {
@@ -1617,27 +1575,9 @@
     /* Remove padding */
   }
 
-  .no1 h3 {
-    padding: 0px 20px;
-    font-size: 20px;
-    /* Make smaller for small screens */
-  }
-
-
-
   .no2 .merge {
     padding-left: 0px;
   }
-
-
-  .merge p {
-    width: 100%;
-    margin-top: -20px;
-    font-size: 12px;
-    text-align: center;
-  }
-
-
 
   .no3 .img4 {
     width: 100%;
@@ -1652,17 +1592,6 @@
 
   .merge1 {
     width: 100%;
-  }
-
-  .merge1 h3 {
-    font-size: 20px;
-    /* Optimize for small screens */
-  }
-
-  .merge1 p {
-    font-size: 12px;
-    /* Optimize for small screens */
-    margin: -20px 0px 0px 0px;
   }
 
   .merge2 {
