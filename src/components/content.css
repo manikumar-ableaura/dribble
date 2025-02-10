@@ -297,6 +297,7 @@
 
 
 .no1 {
+  width: 50%;
   display: flex;
   justify-content: space-between;
 
@@ -305,38 +306,27 @@
 
 .no1 .img1 {
   padding-top: 300px;
-  padding-left: 150px;
-  width: 32%;
+  width: 100%;
   height: 475px;
   object-fit: cover;
   max-width: 100%;
 }
 
-.contents {
-  width: 100%;
-}
 
-.contents p {
-  margin: -24px 0px 0px -84px;
-}
-
-.no1 .img2 {
+.Main-interior .img2 {
   padding-left: 135px;
-  width: 73%;
   height: 600px;
   object-fit: fill;
 }
 
 
 .no1 h3 {
-  padding: 0px 150px;
   margin-top: 0px;
   font-size: 32px;
   text-align: right;
 }
 
 .no1 p {
-  padding: 0px 150px 0px 0px;
   margin-top: -30px;
   font-size: 18px;
   text-align: right;
@@ -353,14 +343,13 @@
 .no2 .img3 {
   position: relative;
   height: 540px;
-  left: -145px;
   padding: 100px 0 0;
 
 }
 
 .no2 .merge {
   width: 100%;
-  padding-left: 150px;
+  
 }
 
 .merge h3 {
@@ -382,13 +371,11 @@
 
 .merge-in h3 {
   position: relative;
-  left: -145px;
   margin-top: 0px;
   font-size: 32px;
 }
 
 .merge-in p {
-  padding: 0px 145px 0px 0px;
   text-align: right;
   margin-top: -30px;
   font-size: 18px;
