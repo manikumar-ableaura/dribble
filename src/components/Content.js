@@ -141,7 +141,7 @@ function Content() {
 
 
         </div>
-        <div className="Main-interior">
+        <div>
           <div className="no1">
             <img
               className="img1"
