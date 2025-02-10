@@ -306,14 +306,14 @@
 
 .no1 .img1 {
   padding-top: 300px;
-  width: 50%;
+  width: 40%;
   height: 475px;
   object-fit: cover;
   max-width: 100%;
 }
 
 .contents {
-  width: 100%;
+  width: 50%;
 }
 
 .contents p {
@@ -321,8 +321,8 @@
 }
 
 .Main-interior .img2 {
-  padding-left: 150px;
-  height: 600px;
+  width: 100%;
+  height: 550px;
   object-fit: fill;
 }
 
@@ -350,7 +350,7 @@
 .no2 .img3 {
   width: 100%;
   position: relative;
-  height: 540px;
+  height: 500px;
   padding: 100px 0 0;
 
 }
@@ -392,7 +392,7 @@
 
 .no3 .img4 {
   width: 100%;
-  height: 500px;
+  height: 425px;
 }
 
 .merge1 h3 {
@@ -437,9 +437,9 @@
 }
 
 .merge2 h4 {
-  padding-right: 40px;
-  width: 400px;
-  font-size: 32px;
+ margin: auto;
+  width: 100%;
+  font-size: 28px;
   line-height: 1.2;
 }
 
@@ -476,7 +476,7 @@
 }
 
 .bun h3 {
-  font-size: 50px;
+  font-size: 40px;
   text-align: left;
   margin-top: 0px;
   font-weight: 600;
@@ -487,7 +487,7 @@
   text-align: right;
   line-height: 1.5;
   color: rgb(0, 0, 0);
-  margin-top: 100px;
+  margin-top: 50px;
   margin-right: 0px;
 }
 
@@ -518,7 +518,8 @@
 
 .ninthblock p {
   width: auto;
-  font-size: 24px;
+  padding-top: 75px;
+  font-size: 20px;
   font-weight: 600;
   text-align: left;
   line-height: 1.5;
@@ -527,7 +528,7 @@
 }
 
 .child1 h2 {
-  font-size: 50px;
+  font-size: 42px;
   line-height: 60px;
   text-align: left;
   margin-top: 118px;
@@ -1468,6 +1469,10 @@
     margin: -24px 0px 0px -84px;
   }
 
+  .Main-interior {
+    width: 100%;
+  }
+
   .Main-interior .img2 {
     width: 100%;
     height: 400px;
@@ -1478,27 +1483,32 @@
   .secondblock h2 {
     font-size: 40px;
   }
+
   .villa {
     gap: 100px;
   }
 
-  .villa img{
+  .villa img {
     width: 100%;
   }
 
-  .villa p{
+  .villa p {
     width: 100%;
   }
-  .villa1 .home{
+
+  .villa1 .home {
     width: 100%;
   }
-  .villa2 .dome{
+
+  .villa2 .dome {
     width: 25%;
   }
-  .villa1 p{
+
+  .villa1 p {
     width: 100%;
   }
-  .villa2 p{
+
+  .villa2 p {
     width: 100%;
   }
 
