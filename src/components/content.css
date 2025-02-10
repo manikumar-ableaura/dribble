@@ -297,7 +297,7 @@
 
 
 .no1 {
-  width: 50%;
+ 
   display: flex;
   justify-content: space-between;
 
@@ -312,9 +312,16 @@
   max-width: 100%;
 }
 
+.contents {
+  width: 100%;
+}
+
+.contents p {
+  margin: -24px 0px 0px -84px;
+}
 
 .Main-interior .img2 {
-  padding-left: 135px;
+  padding-left: 150px;
   height: 600px;
   object-fit: fill;
 }
@@ -723,10 +730,10 @@
   }
 
   .secondblock p {
-
+width: 100%;
     font-size: 16px;
     text-align: center;
-    line-height: 26px;
+    line-height: 28px;
     padding-top: 10px;
   }
 
@@ -1260,7 +1267,7 @@
     width: 75%;
     font-size: 14px;
     text-align: center;
-    margin: -24px 0px 0px 46px;
+    margin: -24px 0px 0px 77px;
   }
 
   .no2 {
@@ -1437,14 +1444,9 @@
     /* Center items */
   }
 
-
   .no1 .img2 {
-    width: 85%;
-    /* Increase width */
+    width: 100%;
     height: auto;
-    /* Maintain aspect ratio */
-    padding-left: 50px;
-    /* Reduce padding */
   }
 
   .no2 {
@@ -1462,7 +1464,7 @@
 
 
   .no3 .img4 {
-    width: 500px;
+    width: 100%;
     /* Reduce width */
     height: 500px;
     /* Reduce height */
@@ -1508,10 +1510,10 @@
   .no3 .img5 {
     width: 400px;
     height: 300px;
+    margin-top: 50px;
   }
 
   .child1 button {
-    margin-left: 50px;
     font-size: 14px;
     padding: 8px 18px;
   }
