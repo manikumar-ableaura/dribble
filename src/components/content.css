@@ -751,14 +751,14 @@
 
   .thirdblock h2 {
     line-height: normal;
-    font-size: 28px;
+    font-size: 34px;
     margin: 100px 0px 0px 0px;
   }
 
   .thirdblock p {
     margin: 10px auto 50px auto;
-    line-height: 24px;
-    font-size: 16px;
+    line-height: 36px;
+    font-size: 24px;
     width: 100%;
     text-align: center;
   }
