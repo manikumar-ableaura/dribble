@@ -13,6 +13,20 @@ function Content() {
     navigate('/shopping');
   };
 
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior: "smooth",
+    });
+  };
+
 
   return (
     <div className='container'>
@@ -36,7 +50,7 @@ function Content() {
             We specialize in turning creative concepts<br />
             into immersive experiences, blending innovation with precision for a digital
           </p>
-          <div className='Arrowclass'>
+          <div className='Arrowclass' onClick={scrollToBottom} >
             <div className="arrow-circle"></div>
           </div>
         </div>
@@ -247,8 +261,8 @@ function Content() {
 
 
       <div className='last'><h1>Looking For Someone Who Can <br></br> Transforming Ideas?</h1>
-
-        <button>Let's Discuss</button></div>
+        <button>Let's Discuss</button>
+      </div>
 
 
       <div className='villa11'>
@@ -280,6 +294,11 @@ function Content() {
           <span className="underline">&nbsp;Behance</span> |
           <span className="underline">&nbsp;Food Menu</span>
         </h4>
+        <div className='Arrows' onClick={scrollToTop} >
+          <div className="arrowscircle"></div>
+        </div>
+
+
       </div>
 
 
@@ -293,3 +312,4 @@ function Content() {
 }
 
 export default Content;
+
