@@ -202,7 +202,7 @@ function Content() {
         <button className='pro'>Process</button>
         <div className='bun'>
           <h3>Discuss what you want to<br></br> make happen if you have<br></br> in idea</h3>
-          <p>Bring your vision to Life: Share your ideas, and we'll craft<br></br> a Digital Masterpiece Tailored to you unique vision</p>
+          <p>Bring your vision to Life: Share your ideas, and <br></br> a Digital Masterpiece Tailored to you unique vision</p>
         </div>
       </div>
 
