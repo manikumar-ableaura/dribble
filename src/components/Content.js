@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './content.css';
-import picture from '../assets/pic2.jpg'
-import villa11 from '../assets/last.jpg'
-import Form from './Form/Form'
+import picture from '../assets/pic2.jpg';
+import villa11 from '../assets/last.jpg';
+import Form from './Form/Form';
+
 
 
 function Content() {
@@ -11,6 +12,10 @@ function Content() {
 
   const handlenavigation = () => {
     navigate('/shopping');
+  };
+
+  const handleAboutNavigation = () => {
+    navigate('/quotes');
   };
 
   const scrollToBottom = () => {
@@ -22,7 +27,7 @@ function Content() {
 
   const scrollToTop = () => {
     window.scrollTo({
-      top:0,
+      top: 0,
       behavior: "smooth",
     });
   };
@@ -58,8 +63,10 @@ function Content() {
 
       <div className='thirdblock'>
 
-        <div><div className='About'>
-          <button> About us </button> </div>
+        <div>
+          <div className='About'>
+          <button className='Sayings' onClick={handleAboutNavigation}> About us </button>
+          </div>
           <h2>Agency in the field of<br></br> architecture</h2>
           <p>Experience Archtectural ingeniuty: As a leading agecny in the field of architecture,
             We bring visionary concepts to life through cutting-edge design and technical mastery</p>

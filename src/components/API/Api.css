@@ -35,6 +35,10 @@
 }
 
 
+
+
+
+
 @media (max-width: 768px) {
     .dish {
         max-width: 325px; 
@@ -46,6 +50,10 @@
 
     .dish p {
         font-size: 14px; 
+    }
+
+    .quote{
+        font-size: 40px;
     }
    
 }
