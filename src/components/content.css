@@ -916,7 +916,10 @@ max-width: 1160px;
   }
 
   .About button {
-    display: none;
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: auto;
   }
 
   .see button {
