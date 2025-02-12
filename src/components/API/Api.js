@@ -14,7 +14,7 @@ function Shopping() {
                     setLoading(false); 
                 })
                 .catch(() => setLoading(false)); 
-        }, 3000);
+        }, 300000);
 
         return () => clearTimeout(timeout);
     }, []);
