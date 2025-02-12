@@ -15,8 +15,10 @@ function Quote() {
                 return res.json();
             })
             .then((data) => {
+                setTimeout(() => {
                 setQuotes(data.quotes);
                 setLoading(false);
+                },3000 );
             })
             .catch((error) => {
                 setError(error.message);
@@ -25,7 +27,18 @@ function Quote() {
     }, []);
 
     if (loading) {
-        return <p>Loading quotes...</p>;
+        return (
+            <div className="loading-container">
+
+                <div class="newtons-cradle">
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                </div>
+              
+            </div>
+        );
     }
 
     if (error) {
