@@ -4,7 +4,7 @@ import './content.css';
 import picture from '../assets/pic2.jpg';
 import villa11 from '../assets/last.jpg';
 import Form from './Form/Form';
-
+import wavy from '../assets/wave.png'
 
 
 function Content() {
@@ -38,7 +38,7 @@ function Content() {
 
       <img
         className="content-image"
-        src='https://images.pexels.com/photos/30512748/pexels-photo-30512748/free-photo-of-bookshelf-with-diverse-selection-of-books.jpeg?auto=compress&cs=tinysrgb&w=600'
+        src={wavy}
         alt="Preview of ARCHIVTS homepage"
       />
       <h1> Hello Folks!</h1>

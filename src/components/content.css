@@ -1,11 +1,26 @@
+/* Apply a smooth background blend */
+body {
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  /* Simulating ocean mist */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Prevents horizontal scroll issues */
+}
+
 .content-image {
-  margin-top: 50px;
   width: 100%;
   height: 650px;
   display: block;
-  margin-left: auto;
-  margin-right: auto
+  margin: 50px auto 0;
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.5));
 }
+
+.content-image {
+  animation: waveMotion 4s ease-in-out infinite alternate;
+}
+
 
 .content {
   margin: auto;
@@ -56,7 +71,12 @@
 }
 
 .Arrowclass {
+  margin: 100px 0px -100px 0px;
   align-self: end;
+}
+
+.About {
+  margin: 50px 0px -50px 0px;
 }
 
 .arrow-circle {
@@ -78,7 +98,8 @@
 }
 
 .Arrowclass {
-  align-self: end;
+  align-self: self-start;
+
 }
 
 .arrow-circle {
@@ -99,9 +120,15 @@
   color: rgb(0, 0, 0);
 }
 
+
+
 .Arrows {
-  align-self: end;
+  display: flex;
+  justify-content: center;
+  margin: 80px 0px -80px 0px;
+
 }
+
 
 .arrowscircle {
   cursor: pointer;
@@ -123,8 +150,10 @@
 
 
 .container {
-margin: auto;
-max-width: 1160px;
+  color: darkgray;
+  background-color: #fbfbfb;
+  margin: auto;
+  max-width: 1160px;
 }
 
 .About button {
@@ -132,7 +161,7 @@ max-width: 1160px;
   justify-content: center;
   align-items: center;
   height: 40px;
-  margin-top: 40px;
+  margin: -50px 0px 100px 0px;
   padding: 10px 20px;
   border-color: #000000;
   color: rgb(0, 0, 0);
@@ -455,11 +484,10 @@ max-width: 1160px;
   align-items: flex-end;
 }
 
-
 .no3 .img5 {
 
   width: 100%;
-  height: 350px;
+  height: 320px;
   object-fit: cover;
 }
 
@@ -475,10 +503,9 @@ max-width: 1160px;
 }
 
 .merge2 h4 {
-  margin: auto;
+  margin: 30px 0px 0px 0px;
   width: 100%;
-  font-size: 28px;
-  line-height: 1.2;
+  font-size: 24px;
 }
 
 .pro {
@@ -678,7 +705,9 @@ max-width: 1160px;
 
 .divider9 {
   height: 2px;
-  background-color: #6b3131;
+  background-color: #314c6b;
+  background: linear-gradient(to right, transparent, #afacab, transparent);
+  box-shadow: 0px 0px 10px rgba(49, 76, 107, 0.6);
   margin: 10px 0;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -687,7 +716,9 @@ max-width: 1160px;
 
 .divider10 {
   height: 2px;
-  background-color: #6b3131;
+  background-color: #314c6b;
+  background: linear-gradient(to right, transparent, #afacab, transparent);
+  box-shadow: 0px 0px 10px rgba(49, 76, 107, 0.6);
   margin: 10px 0;
   margin-top: -98px;
   margin-bottom: 0px;
@@ -728,9 +759,9 @@ max-width: 1160px;
   position: absolute;
   left: 8px;
   bottom: 0;
-  width: calc(100% - 5px);
-  height: 3px;
-  background-color: rgb(240, 120, 210);
+  width: calc(100% - 7px);
+  height: .5px;
+  background-color: rgb(0, 0, 0);
 }
 
 .villa8 {
@@ -748,6 +779,14 @@ max-width: 1160px;
 
 
 @media(max-width:768px) {
+
+  .Arrows {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px -80px 0px;
+
+  }
+
   .no1 {
     width: 100%;
     gap: 50px;
@@ -783,7 +822,7 @@ max-width: 1160px;
   .secondblock h2 {
     margin: auto;
     margin-top: 50px;
-    font-size: 34px!important;
+    font-size: 34px !important;
     text-align: center;
   }
 
@@ -1076,13 +1115,6 @@ max-width: 1160px;
     width: 100%;
   }
 
-  .divider9 {
-    height: 1px;
-    background-color: #6b3131;
-    margin: 10px 0;
-    width: 100%;
-  }
-
   .tomb {
     padding-top: 0px;
 
@@ -1164,23 +1196,14 @@ max-width: 1160px;
     cursor: pointer;
   }
 
-  .divider9 {
-    height: 2px;
-    background-color: #6b3131;
-    margin: 10px 0;
-    margin-top: 100px;
-    margin-bottom: 100px;
+  .divider9,
+  .divider10 {
+    height: 3px;
     width: 100%;
+    background: linear-gradient(to right, transparent, #afacab, transparent);
+    margin-bottom: 100px;
   }
 
-  .divider10 {
-    height: 2px;
-    background-color: #6b3131;
-    margin: 10px 0;
-    margin-top: -98px;
-    margin-bottom: 0px;
-    width: 100%;
-  }
 
   .seventhblock {
     width: 100%;
@@ -1337,7 +1360,7 @@ max-width: 1160px;
 
   .merge p {
     width: 100%;
-    margin-top: -16px !important; 
+    margin-top: -16px !important;
     font-size: 14px !important;
     text-align: center;
   }
@@ -1397,7 +1420,7 @@ max-width: 1160px;
     margin-top: 50px;
     align-items: center;
     text-align: center;
-   
+
   }
 
   .merge2 h4 {
@@ -1633,6 +1656,7 @@ max-width: 1160px;
     justify-content: center;
     text-align: center;
     font-size: 12px;
+    font-weight: bold;
     padding: 0;
     height: 40px;
     width: 100px;
@@ -1649,10 +1673,6 @@ max-width: 1160px;
     height: 40px;
     width: 100px;
 
-  }
-
-  .underline::after {
-    height: 2px;
   }
 
   .villa11 .captive {

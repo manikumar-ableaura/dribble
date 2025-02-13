@@ -51,6 +51,7 @@ p {
     font-weight: bold;
 }
 
+
 .loading-container {
     display: flex;
     align-items: center;
@@ -132,4 +133,26 @@ p {
         0%, 100% { transform: translateY(0); }
         50% { transform: translateY(-10px); }
     }
+
+    h1 {
+        font-size: 28px; /* Reduce font size for smaller screens */
+        margin-bottom: 50px; /* Adjust spacing */
+        text-decoration: none;
+    }
+
+    .quotes {
+        padding: 50px; /* Reduce padding */
+        gap: 15px; /* Reduce gap between quotes */
+    }
+
+    .quote p {
+        width: 80%; /* Increase width for better readability */
+        font-size: 16px; /* Reduce font size */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .quote h5 {
+        font-size: 0.9rem; /* Slightly reduce font size */
+    }
 }
+

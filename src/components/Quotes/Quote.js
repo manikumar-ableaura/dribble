@@ -45,6 +45,10 @@ function Quote() {
         return <p>{`Error: ${error}`}</p>;
     }
 
+    const getRandomColor = () => {
+        return `hsl(${Math.floor(Math.random() * 360)}, 70%, 50%)`;
+    };
+
     return (
         <div className="quotes">
             <h1> The Iron Serenade & Silent Fortitude of Ages</h1>
@@ -52,7 +56,7 @@ function Quote() {
                 quotes.map((item, index) => (
                     <div className="quote" key={index}>
                         <p>"{item.quote}"</p>
-                        <h5>- {item.author}</h5>
+                        <h5 style={{ color: getRandomColor() }}>- {item.author}</h5>
                     </div>
                 ))
             ) : (
