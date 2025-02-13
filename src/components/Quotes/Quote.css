@@ -1,16 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@500&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Sour Gummy';
+    font-size: 40px;
+    font-weight: 500;
+    color: #5e6657;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 100px;
+}
+
+p {
+    font-family: 'Parkinsans', sans-serif;
+}
+
+
 .quotes {
-    padding: 20px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+.quote{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .quote p {
-    font-style: italic;
-    font-size: 1.2rem;
+    width: 50%;
+    font-size: 18px;
     text-align: center;
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: #e5e7e6;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

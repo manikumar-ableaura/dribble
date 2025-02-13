@@ -47,6 +47,7 @@ function Quote() {
 
     return (
         <div className="quotes">
+            <h1> The Iron Serenade & Silent Fortitude of Ages</h1>
             {quotes.length > 0 ? (
                 quotes.map((item, index) => (
                     <div className="quote" key={index}>
