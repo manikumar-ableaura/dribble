@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Form.css";
 
-function Form() {
+function Form({ onClose }) {
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -22,7 +22,7 @@ function Form() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        
+
         for (const key in formData) {
             if (formData[key].trim() === "") {
                 alert(`Please fill in all required fields.`);
@@ -30,14 +30,14 @@ function Form() {
             }
         }
 
-       
+
         const mobilePattern = /^[0-9]{10}$/;
         if (!mobilePattern.test(formData.mobile)) {
             alert("Please enter a valid 10-digit mobile number.");
             return;
         }
 
-      
+
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!emailPattern.test(formData.email)) {
             alert("Please enter a valid email address.");
@@ -50,6 +50,7 @@ function Form() {
 
     return (
         <div className="form-container">
+            <button type="button" className="close-button" onClick={onClose}>✖️</button>
             <h2>Registration Form</h2>
             <form onSubmit={handleSubmit}>
                 <div className="sec1">
@@ -115,9 +116,8 @@ function Form() {
                         />
                     </div>
                 </div>
-                <button type="submit" className="submit-button">
-                    Submit
-                </button>
+                <button type="submit" className="submit-button"> Submit </button>
+
             </form>
         </div>
     );
