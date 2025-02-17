@@ -45,21 +45,27 @@ function Shopping() {
     }
 
     return (
-        <div className="dishes">
-            <ScrollToTop />
+        <>
+
             <h1>Paradise of Cravings</h1>
-            {dishes.map((item, index) => (
-                <div className="dish" key={index}>
-                    <img src={item.image} alt={item.name} />
-                    <h2>{item.name}</h2>
-                    <h5>{item.ingredients.join(", ")}</h5>
-                    <h6>{item.instructions}</h6>
-                    <h4>{item.mealType}</h4>
-                    <p>Rating: {item.rating}/5</p>
-                </div>
-            ))}
-        </div>
+            <div className="dishes">
+                <ScrollToTop />
+                {dishes.map((item, index) => (
+                    <div className="dish" key={index}>
+                        <img src={item.image} alt={item.name} />
+                        <h2>{item.name}</h2>
+                        <h5>{item.ingredients.join(", ")}</h5>
+                        <h6>{item.instructions}</h6>
+                        <h4>{item.mealType}</h4>
+                        <p>Rating: {item.rating}/5</p>
+                    </div>
+                ))}
+            </div>
+            
+        </>
     );
+
+
 }
 
 export default Shopping;

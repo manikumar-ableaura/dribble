@@ -5,6 +5,7 @@ import Content from './components/Content';
 import Shopping from './components/API/Api';
 import Quote from './components/Quotes/Quote'; 
 import ScrollToTop from './components/Scrolltotop/Scrolltotop';
+import Discuss from './components/Discuss/Discuss';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<Content />} />
         <Route path="/shopping" element={<Shopping />} />
         <Route path="/quotes" element={<Quote />} />
-       
+        <Route path="/Discuss" element={<Discuss />} />
       </Routes>
     </Router>
   );
