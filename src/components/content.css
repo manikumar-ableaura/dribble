@@ -767,13 +767,11 @@ body {
 .popup {
   position: fixed;
   top: 0;
-  left: 25%;
-  width: 50%;
+  left: 30%;
+  width: auto;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 999;
 }
 
@@ -809,6 +807,14 @@ body {
 }
 
 
+@media(max-width:1200px) {
+  .popup {
+
+    left: 20%;
+    width: auto;
+
+  }
+}
 
 @media(max-width:768px) {
 
