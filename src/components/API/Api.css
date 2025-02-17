@@ -1,3 +1,10 @@
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(72, 110, 110);
+    border-radius: 25px;
+}
+
 .dishes {
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +60,7 @@
     width: var(--uib-size);
     height: var(--uib-size);
     gap: 10px;
-   
+
 }
 
 .newtons-cradle__dot {

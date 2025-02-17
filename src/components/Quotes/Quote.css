@@ -8,7 +8,7 @@ h1 {
     font-family: 'Sour Gummy';
     font-size: 40px;
     font-weight: 500;
-    color: #5e6657;
+    color: #1d9fdb;
     text-align: center;
     text-decoration: underline;
     margin-bottom: 100px;
@@ -141,12 +141,14 @@ p {
     }
 
     .quotes {
+        background-color: azure ;
         padding: 50px; /* Reduce padding */
         gap: 15px; /* Reduce gap between quotes */
     }
 
     .quote p {
-        width: 80%; /* Increase width for better readability */
+        background-color: azure;
+        width: 100%; /* Increase width for better readability */
         font-size: 16px; /* Reduce font size */
         padding: 10px; /* Reduce padding */
     }

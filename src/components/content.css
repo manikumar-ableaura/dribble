@@ -864,7 +864,7 @@ body {
 
   .secondblock p {
     width: 75%;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     padding-top: 10px;
   }
@@ -1181,6 +1181,7 @@ body {
   }
 
   .last h1 {
+    color: #000000 !important;
     font-size: 26px;
     margin-top: 30%;
     line-height: 1.5;

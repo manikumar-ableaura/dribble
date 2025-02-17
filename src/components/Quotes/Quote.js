@@ -1,5 +1,19 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import './Quote.css';
+
+
+
+const ScrollToTop = () => {
+    const { top } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [top]);
+
+    return null;
+};
+
 
 function Quote() {
     const [quotes, setQuotes] = useState([]);
@@ -16,9 +30,9 @@ function Quote() {
             })
             .then((data) => {
                 setTimeout(() => {
-                setQuotes(data.quotes);
-                setLoading(false);
-                },3000 );
+                    setQuotes(data.quotes);
+                    setLoading(false);
+                }, 3000);
             })
             .catch((error) => {
                 setError(error.message);
@@ -36,7 +50,7 @@ function Quote() {
                     <div class="newtons-cradle__dot"></div>
                     <div class="newtons-cradle__dot"></div>
                 </div>
-              
+
             </div>
         );
     }
@@ -51,6 +65,7 @@ function Quote() {
 
     return (
         <div className="quotes">
+            <ScrollToTop />
             <h1> The Iron Serenade & Silent Fortitude of Ages</h1>
             {quotes.length > 0 ? (
                 quotes.map((item, index) => (
