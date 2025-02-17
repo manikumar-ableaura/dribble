@@ -46,7 +46,6 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .secondblock h2 {
@@ -62,14 +61,13 @@ body {
 
 .secondblock p {
   font-size: 20px;
-  padding-top: 50px;
+  padding-top: 80px;
   font-weight: lighter;
   color: rgb(0 0 0);
   text-align: right;
-  width: 68%;
-  line-height: 36px;
+  width: 100%;
+  line-height: 40px;
   font-family: Poppins, sans-serif;
-  margin-bottom: 20px;
 }
 
 .Arrowclass {
@@ -83,8 +81,8 @@ body {
 
 .arrow-circle {
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: transparent;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 30px;
@@ -100,21 +98,12 @@ body {
 }
 
 .Arrowclass {
-  align-self: center;
+ display: flex;
+ justify-content: center;
 
 }
 
-.arrow-circle {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  background: transparent;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .arrow-circle::after {
   content: "▼";
@@ -134,8 +123,8 @@ body {
 
 .arrowscircle {
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: transparent;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 30px;
@@ -500,6 +489,7 @@ body {
 }
 
 .merge2 h4 {
+  text-align: center;
   margin: 30px 0px 0px 0px;
   width: 100%;
   font-size: 24px;
@@ -873,8 +863,8 @@ body {
   }
 
   .secondblock p {
-    width: 100%;
-    font-size: 16px;
+    width: 75%;
+    font-size: 14px;
     text-align: center;
     padding-top: 10px;
   }
@@ -1065,13 +1055,15 @@ body {
 
   .villa1 h4 {
     text-align: center;
+    margin-top: -75px;
+    color: whitesmoke;
   }
 
   .villa1 p {
     display: block;
-    margin: auto;
-    align-items: center;
-    width: 83%;
+    padding: 16px;
+    align-self: center;
+    width: 83% !important;
     font-size: 20px;
     text-align: center;
   }
@@ -1099,6 +1091,7 @@ body {
   }
 
   .bun {
+    gap: 25px!important;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -1113,6 +1106,7 @@ body {
   }
 
   .bun p {
+    margin-top: 0px !important;
     display: block;
     margin: auto;
     width: 100%;
@@ -1866,11 +1860,6 @@ body {
     width: 35px;
     height: 35px;
     margin-right: 6px;
-  }
-
-  .see {
-    display: flex;
-    justify-content: center;
   }
 
 }

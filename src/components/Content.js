@@ -15,6 +15,10 @@ function Content() {
 
   const navigate = useNavigate();
 
+  const pagetodiscuss = () => {
+    navigate('/discuss');
+  }
+
   const handlenavigation = () => {
     navigate('/shopping');
   };
@@ -57,18 +61,17 @@ function Content() {
 
         <button className="gumroad-button" onClick={handlenavigation}>Food Menu</button>
         <div className="secondblock">
-          <h2>TRANSFORMING<br /> IDEAS ARCHITECTURE</h2>
+          <h2>TRANSFORMING IDEAS <br />ARCHITECTURE</h2>
           <div className="text-container">
             <p>
               We specialize in turning creative concepts<br />
               into immersive experiences, blending innovation with precision for a digital
             </p>
-            <div className='Arrowclass' onClick={scrollToBottom} >
-              <div className="arrow-circle"></div>
-            </div>
           </div>
         </div>
-
+        <div className='Arrowclass' onClick={scrollToBottom} >
+          <div className="arrow-circle"></div>
+        </div>
         <div className='thirdblock'>
 
           <div>
@@ -276,7 +279,7 @@ function Content() {
 
 
         <div className='last'><h1>Looking For Someone Who Can <br></br> Transforming Ideas?</h1>
-          <button>Let's Discuss</button>
+          <button className='discuss' onClick={pagetodiscuss}>Let's Discuss</button>
         </div>
 
 
