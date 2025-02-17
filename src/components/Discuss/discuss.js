@@ -33,15 +33,21 @@ function Discuss() {
                         <a>Forgot Password</a>
 
                         <button>Submit</button>
-
-                        <p>Don't have an account?<a href="/signup/">Sign-up</a></p>
+                        <div className="pa">
+                            <div>
+                                <p>Don't have an account?</p>
+                            </div>
+                            <div>
+                                <a href="/signup/">Sign-up</a>
+                            </div>
+                        </div>
 
                         <h5 style={{ textDecoration: 'underline' }}>Always feel free to Contact us!</h5>
 
                         <div className="mm">
 
-                           <div> Email: <a>manikumar@ableaura.com</a></div>
-                           <div>Contact no: 8074565203</div>
+                            <div> Email: <a>manikumar@ableaura.com</a></div>
+                            <div>Contact no: 8074565203</div>
 
                         </div>
 
