@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Discuss.css";
 
+
+
+
+
 function Discuss() {
+
+    const [Name, setName] = useState("");
+    const [Email, setEmail] = useState("");
+    const [Password, setPassword] = useState("");
+
 
     return (
         <>
@@ -17,17 +26,33 @@ function Discuss() {
                     <div className="div2">
 
                         <div className="divi2">
-                            <label class="labeltext">Name </label>
-                            <input type="text" placeholder="Enter your Full Name" value=""></input>
+                            <label className="labeltext">Name </label>
+                            <input
+                                type="text"
+                                placeholder="Enter your Full Name"
+                                value={Name}
+                                onChange={(e) => setName(e.target.value)}
+                            ></input>
                         </div>
 
                         <div className="divi3">
-                            <label class="labeltext">Email / Mobile Number</label>
-                            <input type="text" placeholder="Email or Phone" value=""></input>
+                            <label className="labeltext">Email / Mobile Number</label>
+                            <input
+                                type="text"
+                                placeholder="Email or Phone"
+                                value={Email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            ></input>
                         </div>
+
                         <div className="divi4">
-                            <label class="labeltext">Password</label>
-                            <input type="Password" placeholder="Password" value=""></input>
+                            <label className="labeltext">Password</label>
+                            <input
+                                type="Password"
+                                placeholder="Password"
+                                value={Password}
+                                onChange={(e) => setPassword(e.target.value)}>
+                            </input>
                         </div>
 
                         <a>Forgot Password</a>
