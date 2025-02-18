@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import "./Discuss.css";
-
-
-
+import { useNavigate } from "react-router-dom";
 
 
 function Discuss() {
+
+
+    const navigate = useNavigate();
+
+    const handlenavigation = () => {
+        navigate('/card')
+
+    }
 
     const [Name, setName] = useState("");
     const [Email, setEmail] = useState("");
@@ -18,7 +24,7 @@ function Discuss() {
 
                 <h2>Let`s Discuss our project</h2>
                 <h4>We’re here to understand your needs and help you succeed.</h4>
-                <button>Let`s Start the Conversation</button>
+                <button className='card' onClick={handlenavigation}>Let`s Start the Conversation</button>
 
 
                 <div className="div1">
@@ -55,7 +61,7 @@ function Discuss() {
                             </input>
                         </div>
 
-                        <a>Forgot Password</a>
+                        <a href="/forgot-password">Forgot Password</a>
 
                         <button>Submit</button>
                         <div className="pa">
@@ -71,7 +77,8 @@ function Discuss() {
 
                         <div className="mm">
 
-                            <div> Email: <a>manikumar@ableaura.com</a></div>
+                            <div> Email: <a href="mailto:manikumar@ableaura.com">manikumar@ableaura.com</a></div>
+
                             <div>Contact no: 8074565203</div>
 
                         </div>

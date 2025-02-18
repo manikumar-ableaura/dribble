@@ -6,6 +6,7 @@ import Shopping from './components/API/Api';
 import Quote from './components/Quotes/Quote'; 
 import ScrollToTop from './components/Scrolltotop/Scrolltotop';
 import Discuss from './components/Discuss/Discuss';
+import Card from './components/Card/Card';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/shopping" element={<Shopping />} />
         <Route path="/quotes" element={<Quote />} />
         <Route path="/Discuss" element={<Discuss />} />
+        <Route path="/card" element={<Card />} />
       </Routes>
     </Router>
   );
