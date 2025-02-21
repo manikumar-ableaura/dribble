@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { FaSearch } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import './content.css';
 import picture from '../assets/pic2.jpg';
@@ -51,7 +52,7 @@ function Content() {
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-    return () =>document.removeEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isSearch]);
 
 
@@ -76,16 +77,21 @@ function Content() {
 
         <div className='Default-search'>
           {!isSearch && (
-            
-          <input
-            type="text"
-            className="default-search-input"
-            placeholder="Search here..."
-            value={Search}
-            onChange={(e) => setSearch(e.target.value)}
-            onFocus={() => setIsSearch(true)}
-          />
+            <div className='search-container'>
+              <input
+                type="text"
+                className="default-search-input"
+                placeholder=""
+                value={Search}
+                onChange={(e) => setSearch(e.target.value)}
+                onFocus={() => setIsSearch(true)}
+              />
+              <FaSearch className='search-icon' onClick={() => setIsSearch(true)} />
+            </div>
+
           )}
+
+
 
           {isSearch && (
             <div className="popups" onClick={() => setIsSearch(false)}>
@@ -97,7 +103,7 @@ function Content() {
                   value={Search}
                   onChange={(e) => setSearch(e.target.value)}
                 />
-              
+
               </div>
               <button className="close-btn" onClick={() => setIsSearch(false)}>✖</button>
             </div>
