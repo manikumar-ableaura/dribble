@@ -45,7 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .secondblock h2 {
@@ -80,6 +80,7 @@ body {
 }
 
 .arrow-circle {
+  margin-bottom: 50px;
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -767,16 +768,23 @@ body {
 .popup {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
-  justify-content: center;  /* Horizontally center content */
-  align-items: center;  /* Vertically center content */
+  justify-content: center;
+  /* Horizontally center content */
+  align-items: center;
+  /* Vertically center content */
   position: fixed;
   top: 0;
-  left: 50%;  /* Center the popup horizontally */
-  transform: translateX(-50%);  /* Adjust left position to truly center */
-  width: 80%;  /* Width as a percentage of the viewport */
-  height: 100vh;  /* Make the popup 100% of the viewport height */
+  left: 50%;
+  /* Center the popup horizontally */
+  transform: translateX(-50%);
+  /* Adjust left position to truly center */
+  width: 80%;
+  /* Width as a percentage of the viewport */
+  height: 100vh;
+  /* Make the popup 100% of the viewport height */
   z-index: 999;
-  box-sizing: border-box;  /* Include padding/border in width/height calculation */
+  box-sizing: border-box;
+  /* Include padding/border in width/height calculation */
 }
 
 
@@ -811,20 +819,76 @@ body {
   padding: 0px 0px 80px 0px;
 }
 
+/* Default Search Bar */
+
+.default-search-input {
+  /* <-- Updated class */
+  border: none;
+  display: block;
+  margin: 50px auto;
+  padding: 7px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 20%;
+}
+
+/* Popups Search Bar */
+.popupssearchinput {
+  margin: auto;
+  width: 60%;
+  padding: 8px;
+  font-size: 16px;
+
+  border-radius: 25px;
+
+}
+
+/* Popup Container */
+.popups {
+  background-color: rgba(255, 255, 255, 0.795);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 25vh;
+  z-index: 999;
+}
+
+.popups-content {
+  width: 80%;
+  background: transparent;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+}
+.close-btn {
+  margin: -100px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transform: translateX(-925%);
+}
+
 
 
 
 @media (max-width: 1280px) {
   .popup {
-      width: 100%; 
-      height: 100vh; 
+    width: 100%;
+    height: 100vh;
   }
 }
 
 @media (max-width: 800px) {
   .popup {
-      width: 100%; 
-      height: 100vh;  
+    width: 100%;
+    height: 100vh;
   }
 }
 
