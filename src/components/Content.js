@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 // import { FaSearch } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import './content.css';
@@ -12,13 +12,19 @@ import logo from '../assets/popuplogo.jpg'
 
 function Content() {
 
+  const items = ["Home", "About", "Services", "Contact", "Portfolio", "Gallery"];
+
   const [form, Setform] = useState(false);
 
   const [searchQuery, setSearchQuery] = useState('');
 
   const [isSearch, setIsSearch] = useState(false);
+  
+  const popupRef = useRef(null);
 
   const navigate = useNavigate();
+
+  
 
   const pagetodiscuss = () => {
     navigate('/discuss');
@@ -53,18 +59,23 @@ function Content() {
 
   const closePopup = () => {
     setIsSearch(false);
-    setSearchQuery(''); // Optional: Clear input when closing
+    setSearchQuery('');
   };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isSearch && !event.target.closest('.popups-content')) {
-        setIsSearch(false);
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        closePopup();
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    if (isSearch) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
   }, [isSearch]);
 
 
@@ -86,7 +97,7 @@ function Content() {
         />
 
         {isSearch && (
-          <div className='search-popup show'>
+          <div className='search-popup show' ref={popupRef}>
             <img
               className="pop-logo"
               src={logo}
