@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Form.css";
 
 function Form({ onClose }) {
@@ -11,6 +11,13 @@ function Form({ onClose }) {
         zip: "",
     });
 
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, []);
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
@@ -21,6 +28,11 @@ function Form({ onClose }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const trimmedData = {};
+        for (const key in formData) {
+            trimmedData[key] = formData[key].trim();
+        }
 
 
         for (const key in formData) {
@@ -41,6 +53,12 @@ function Form({ onClose }) {
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!emailPattern.test(formData.email)) {
             alert("Please enter a valid email address.");
+            return;
+        }
+
+        const zipPattern = /^[0-9]{5,6}$/;
+        if (!zipPattern.test(trimmedData.zip)) {
+            alert("Please enter a valid ZIP code.");
             return;
         }
 

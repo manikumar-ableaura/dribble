@@ -762,22 +762,15 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
-  /* Horizontally center content */
   align-items: center;
-  /* Vertically center content */
   position: fixed;
   top: 0;
   left: 50%;
-  /* Center the popup horizontally */
   transform: translateX(-50%);
-  /* Adjust left position to truly center */
   width: 80%;
-  /* Width as a percentage of the viewport */
   height: 100vh;
-  /* Make the popup 100% of the viewport height */
   z-index: 999;
   box-sizing: border-box;
-  /* Include padding/border in width/height calculation */
 }
 
 
@@ -877,6 +870,7 @@ body {
 }
 
 .search-popup.show {
+  height: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -949,7 +943,7 @@ body {
 
 @media(max-width:768px) {
 
-  .search-popup.show{
+  .search-popup.show {
     width: 100%;
     height: auto;
   }
@@ -958,7 +952,7 @@ body {
     margin-left: 150px;
   }
 
-  .pop-logo{
+  .pop-logo {
     width: 100px;
     height: 60px;
   }
