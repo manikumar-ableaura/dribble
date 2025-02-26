@@ -12,8 +12,6 @@ import logo from '../assets/popuplogo.jpg'
 
 function Content() {
 
-  const items = ["Home", "About", "Services", "Contact", "Portfolio", "Gallery"];
-
   const [form, Setform] = useState(false);
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -373,7 +371,7 @@ function Content() {
 
         <div className='dummy2'>
           <p>Or drop us a line:</p>
-          <h3>hellodama@odama.io</h3>
+          <h3>manikumarsrinivasan.proton.me</h3>
         </div>
 
         <div className="dummy3">

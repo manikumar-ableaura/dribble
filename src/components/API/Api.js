@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import './Api.css';
 
-
 const ScrollToTop = () => {
     const { top } = useLocation();
 
@@ -34,19 +33,24 @@ function Shopping() {
     if (loading) {
         return (
             <div className="loading-container">
-                <div className="newtons-cradle">
-                    <div className="newtons-cradle__dot"></div>
-                    <div className="newtons-cradle__dot"></div>
-                    <div className="newtons-cradle__dot"></div>
-                    <div className="newtons-cradle__dot"></div>
-                </div>
+                <svg style={{ position: "absolute", width: 0, height: 0 }}>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="12" />
+                        <feColorMatrix values="0 0 0 0 0 
+                                              0 0 0 0 0 
+                                              0 0 0 0 0 
+                                              0 0 0 48 -7" />
+                    </filter>
+                </svg>
+
+              
+                <div className="loader"></div>
             </div>
         );
     }
 
     return (
         <>
-
             <h1>Paradise of Cravings</h1>
             <div className="dishes">
                 <ScrollToTop />
@@ -61,11 +65,8 @@ function Shopping() {
                     </div>
                 ))}
             </div>
-            
         </>
     );
-
-
 }
 
 export default Shopping;

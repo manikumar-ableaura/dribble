@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  background-color: #fbfbfb;
+  background-color: #fefefe;
   margin: auto;
   max-width: 1160px;
 }
@@ -266,7 +266,7 @@ body {
 .villa p {
   margin: 0%;
   width: 33%;
-  font-size: 25px;
+  font-size: 21px;
   font-family: math;
   color: #e7e7e9;
   line-height: 1.5;
@@ -293,7 +293,7 @@ body {
 
 .villa1 p {
   width: 20%;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -325,7 +325,7 @@ body {
 
 .villa2 p {
   width: 20%;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -529,7 +529,7 @@ body {
 }
 
 .bun p {
-  font-size: 24px;
+  font-size: 20px;
   text-align: right;
   line-height: 1.5;
   color: rgb(0, 0, 0);
@@ -565,7 +565,7 @@ body {
 .ninthblock p {
   width: auto;
   padding-top: 75px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   text-align: left;
   line-height: 1.5;
@@ -1838,7 +1838,7 @@ body {
 
   .dummy2 h3 {
     margin-top: 20px;
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .dummy2 p {
