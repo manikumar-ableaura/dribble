@@ -17,12 +17,12 @@ function Content() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const [isSearch, setIsSearch] = useState(false);
-  
+
   const popupRef = useRef(null);
 
   const navigate = useNavigate();
 
-  
+
 
   const pagetodiscuss = () => {
     navigate('/discuss');
@@ -40,6 +40,10 @@ function Content() {
   const handleAboutNavigation = () => {
     navigate('/quotes');
   };
+
+  const handleProductNavigation =() =>{
+    navigate('/Products')
+  }
 
   const scrollToBottom = () => {
     window.scrollTo({
@@ -151,8 +155,9 @@ function Content() {
             <h2>Agency in the field of<br></br> architecture</h2>
             <p>Experience Archtectural ingeniuty: As a leading agecny in the field of architecture,
               We bring visionary concepts to life through cutting-edge design and technical mastery</p>
+
             <div className='see'>
-              <button> See More </button>
+              <button className='Products' onClick={handleProductNavigation}> See More </button>
             </div>
           </div>
 
