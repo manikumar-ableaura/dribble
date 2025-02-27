@@ -161,9 +161,7 @@ body {
 /* 🔹 Mobile Responsive Design */
 @media (max-width: 768px) {
 
-    .product-container{
-        padding:20px 20px 100px 0px;;
-    }
+   
     .popup-content {
         width: 90%; /* More Width for Small Screens */
         height: auto; /* Auto Height for Better Adjustment */
