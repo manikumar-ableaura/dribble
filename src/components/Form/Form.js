@@ -12,21 +12,24 @@ function Form({ onClose }) {
     });
 
     const [errors, setErrors] = useState({});
-
     useEffect(() => {
-        const disableScroll = () => {
-            if (window.innerWidth <= 768) { // Only disable scrolling on mobile
-                document.body.style.overflow = "hidden";
-            }
+        const disableScroll = (e) => e.preventDefault();
+        
+        if (window.innerWidth <= 768) {
+            document.body.style.overflow = "hidden";
+            document.body.style.position = "fixed";
+            document.body.style.width = "100%";
+            document.addEventListener("touchmove", disableScroll, { passive: false });
+        }
+    
+        return () => {
+            document.body.style.overflow = "auto";
+            document.body.style.position = "";
+            document.body.style.width = "";
+            document.removeEventListener("touchmove", disableScroll);
         };
-
-        const enableScroll = () => {
-            document.body.style.overflow = "auto"; // Enable scrolling on all devices
-        };
-
-        disableScroll(); // Apply on mount
-        return enableScroll; // Cleanup when unmounted
     }, []);
+    
 
     const validate = () => {
         let newErrors = {};
