@@ -5,8 +5,8 @@ import './content.css';
 import picture from '../assets/pic2.jpg';
 import villa11 from '../assets/last.jpg';
 import Form from './Form/Form';
-import wavy from '../assets/wave.png'
-import logo from '../assets/popuplogo.jpg'
+// import wavy from '../assets/wave.png'
+// import logo from '../assets/popuplogo.jpg'
 
 
 
@@ -86,7 +86,7 @@ function Content() {
       <div className='Hero'>
         <img
           className="content-image"
-          src={wavy}
+          src="https://able-email-media.s3.amazonaws.com/common/logo_main.svg"
           alt="Preview of ARCHIVTS homepage"
         />
         <input
@@ -102,7 +102,7 @@ function Content() {
           <div className='search-popup show' ref={popupRef}>
             <img
               className="pop-logo"
-              src={logo}
+              src="https://able-email-media.s3.amazonaws.com/common/logo_main.svg"
               alt="Loading..."
             />
             <div className="search-container">
@@ -396,7 +396,7 @@ function Content() {
         <div className="divider9"></div>
         <div className="divider10"></div>
         <div className='form-dadpop'>
-          <button className='form-pop' onClick={() => Setform(true)}> Click here :-) </button>
+          <button className='form-pop' onClick={() => Setform(true)}> Form </button>
         </div>
 
         {form && (

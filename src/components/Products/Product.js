@@ -86,6 +86,9 @@ function Product() {
                                 <p><strong>Category:</strong> {selectedProduct.category}</p>
                                 <p><strong>Price:</strong> ${selectedProduct.price}</p>
                                 <p><strong>Tags:</strong> {selectedProduct.tags.join(", ")}</p>
+                                <p><strong>Rating:</strong> {selectedProduct.rating} ⭐</p>
+
+                                
                             </div>
                         </div>
                     </div>

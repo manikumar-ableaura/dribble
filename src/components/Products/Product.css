@@ -89,7 +89,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Darkened for more contrast */
+    background: rgba(255, 255, 255, 0.7); /* Darkened for more contrast */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,12 +97,12 @@ body {
 }
 /* Popup Content - Bigger & More Spacious */
 .popup-content {
-    background: white;
+    background: rgba(234, 235, 240, 0.658);
     padding: 30px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    width: 60%; /* Increased Width */
+    width: 50%; /* Increased Width */
     max-width: 700px; /* Maximum Width */
     height: 60vh; /* Increased Height */
     max-height: 500px; /* Prevents Overflow */
@@ -117,23 +117,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Better Spacing */
-    gap: 150px;
+    gap: 100px;
     height: 100%; /* Ensures full height usage */
 }
 
 
 /* Enlarged Product Image */
 .popup-body img {
-    width: 220px; /* Slightly Larger */
-    height: 220px; /* Set Height for Consistency */
+    background-color:rgba(88, 110, 50, 0.712);
+    width: 320px; /* Slightly Larger */
+    height: 320px; /* Set Height for Consistency */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     object-fit: cover; /* Ensures Proper Scaling */
 }
 
 /* Product Details - Adjusted for Readability */
-.product-details {
+.product-details {width: 250px;
+    background-color: rgba(88, 110, 50, 0.205);;
+    border-radius: 10px;
+    padding-left: 30px;
     text-align: left;
+    line-height: 40px;
     font-size: 16px;
     flex: 1; /* Takes up available space */
     overflow-y: auto; /* Allows Scrolling if Needed */
@@ -142,6 +147,7 @@ body {
 .product-details h2 {
     margin: 0 0 10px;
     font-size: 22px;
+    
 }
 
 /* Product Details Text */

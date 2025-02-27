@@ -1,20 +1,22 @@
 body {
- 
+
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
 .container {
-  background-color: #fefefe;
+  background-color: #c1dbe4;
   margin: auto;
+  padding: 0px 100px 0px 100px;
   max-width: 1160px;
+  border-radius: 25px;
 }
 
 .content-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 375px;
+  height: 500px;
+
 }
 
 .content {
@@ -31,6 +33,7 @@ body {
   font-size: 60px;
   text-align: center;
   margin-top: 50px;
+  padding-top: 50px;
 }
 
 
@@ -208,19 +211,18 @@ body {
   height: 40px;
   margin-top: 50px;
   padding: 10px 20px;
-  background-color: #d7e0d8;
-  border-color: #e7e7e9;
+  background-color: #cae4d12b;
   color: rgb(0, 0, 0);
   border: none;
-  border-radius: 99999px;
-  box-shadow: 0 2px 0 #fff, 0 4px 0 #a3a2a2;
+  border-radius: 99px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
   cursor: pointer;
-
   font-size: 16px;
 }
 
 .gumroad-button:hover {
-  background-color: #Cae4d1;
+  background-color: #e4b2d356;
+  ;
 }
 
 
@@ -359,7 +361,8 @@ body {
 
 
 .no1 .img1 {
-  padding-top: 300px;
+  border-radius: 20px;
+  margin-top: 300px;
   width: 40%;
   height: 475px;
   object-fit: cover;
@@ -369,7 +372,8 @@ body {
 
 
 .no1 .img2 {
-  padding-left: 50px;
+  border-radius: 20px;
+  margin: 50px;
   width: 93%;
   height: 550px;
   object-fit: fill;
@@ -398,7 +402,8 @@ body {
   width: 100%;
   position: relative;
   height: 500px;
-  padding: 100px 0 0;
+  margin: 100px 0 0;
+  border-radius: 20px;
 
 }
 
@@ -438,6 +443,7 @@ body {
 }
 
 .no3 .img4 {
+  border-radius: 20px;
   width: 100%;
   height: 425px;
 }
@@ -465,7 +471,7 @@ body {
 }
 
 .no3 .img5 {
-
+  border-radius: 20px;
   width: 100%;
   height: 320px;
   object-fit: cover;
@@ -504,6 +510,7 @@ body {
 
 
 .villa8 .lative {
+  border-radius: 20px;
   height: 430px;
   width: 100%;
   object-fit: cover;
@@ -543,12 +550,14 @@ body {
 }
 
 .villa9 .plative {
+  border-radius: 20px;
   height: 430px;
   width: 100%;
   object-fit: cover;
 }
 
 .villa10 .clative {
+  border-radius: 20px;
   height: 430px;
   width: 100%;
   object-fit: cover;
@@ -565,7 +574,7 @@ body {
 .ninthblock p {
   width: auto;
   padding-top: 75px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   text-align: left;
   line-height: 1.5;
@@ -595,7 +604,7 @@ body {
 }
 
 .last h1 {
-  font-size: 70px;
+  font-size: 60px;
   margin-top: 10%;
 }
 
@@ -609,16 +618,15 @@ body {
   color: rgb(255, 255, 255);
   border: 2px solid #000000;
   border-radius: 99px;
-  font-size: 15px;
+  font-size: 12px;
   cursor: pointer;
   text-transform: uppercase;
 }
 
-
 .villa11 .captive {
   width: 100%;
-  height: 700px;
-  padding-top: 100px;
+  height: 500px;
+  margin-top: 100px;
   border-radius: 50px;
 }
 
@@ -641,16 +649,16 @@ body {
   margin: auto;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 40px;
   margin-top: 40px;
-  padding: 10px 30px;
+  padding: 0px 16px;
   background-color: #000000;
   font-weight: 500;
   border: none;
   border-radius: 99999px;
-  box-shadow: 0 2px 0 #fff, 0 4px 0 #ea64d9;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
   cursor: pointer;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .dummy2 {
@@ -790,10 +798,8 @@ body {
   margin: auto;
   margin-top: 40px;
   padding: 10px 20px;
-  background-color: #00aeff;
-  border-color: #ffffff;
+  background-color: #b9d8e7;
   color: rgb(24, 16, 16);
-  border: 0.5px solid #ffffff;
   border-radius: 30px;
   font-size: 15px;
   font-weight: 600;
@@ -1881,7 +1887,7 @@ body {
   }
 
   .villa11 .captive {
-    height: 400px;
+    height: 200px;
 
   }
 }
