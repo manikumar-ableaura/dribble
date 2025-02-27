@@ -160,6 +160,9 @@ body {
 
 /* 🔹 Mobile Responsive Design */
 @media (max-width: 768px) {
+    .product-container{
+        padding: 0px;
+    }
 
    
     .popup-content {
