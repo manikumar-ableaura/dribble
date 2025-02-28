@@ -14,7 +14,7 @@ body {
 }
 
 .content-image {
-  width: 375px;
+  width: 600px;
   height: 500px;
 
 }
@@ -194,11 +194,13 @@ body {
 }
 
 .picture {
+  border-radius: 16px;
   height: 50%;
   width: 100%;
 }
 
 .picture .pics {
+  border-radius: 16px;
   height: 50%;
   width: 100%;
 }
@@ -295,7 +297,7 @@ body {
 
 .villa1 p {
   width: 20%;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -327,7 +329,7 @@ body {
 
 .villa2 p {
   width: 20%;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
