@@ -187,6 +187,7 @@ body {
   margin-top: 40px;
   padding: 10px 20px;
   background-color: #000000;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
   color: #ffffff;
   border-radius: 99px;
   cursor: pointer;
@@ -200,6 +201,7 @@ body {
 
 .picture .pics {
   height: 50%;
+  border-radius: 15px;
   width: 100%;
 }
 
@@ -381,7 +383,7 @@ body {
 
 
 .no1 h3 {
-  margin-top: 0px;
+  margin-top: -50px!important;
   font-size: 32px;
   text-align: right;
 }
@@ -617,6 +619,7 @@ body {
   border-color: #e1dcdc;
   color: rgb(255, 255, 255);
   border: 2px solid #000000;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
   border-radius: 99px;
   font-size: 12px;
   cursor: pointer;
@@ -798,9 +801,10 @@ body {
   margin: auto;
   margin-top: 40px;
   padding: 10px 20px;
-  background-color: #b9d8e7;
-  color: rgb(24, 16, 16);
+  background-color: #ccc;
+  color: rgb(0 0 0);
   border-radius: 30px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
@@ -1400,7 +1404,7 @@ body {
     float: left;
     padding: 10px 20px;
     border-color: #e1dcdc;
-    color: rgb(159 155 155);
+    color: rgb(40, 40, 40);
     border: 2px solid #c9c4c4;
     border-radius: 99px;
     font-size: 15px;
@@ -1478,7 +1482,7 @@ body {
   }
 
   .dummy2 h3 {
-    font-size: 26px;
+    font-size: 22px!important;
   }
 
   .dummy3 p {
@@ -1488,7 +1492,7 @@ body {
   }
 
   .dummy3 h4 {
-    font-size: 16px;
+    font-size: 16px!important;
   }
 
   .villa7 h2 {
@@ -1534,6 +1538,7 @@ body {
   }
 
   .no1 h3 {
+    margin-top: 0px!important;
     padding: 0px 40px;
     /* Further reduce padding */
     font-size: 24px;
@@ -1650,6 +1655,9 @@ body {
     font-size: 14px;
     padding: 0px 30px;
     height: 36px;
+    border-color: #afacab;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
+    cursor: pointer;
 
   }
 
@@ -1992,10 +2000,13 @@ body {
   }
 
   .child1 button {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
+    border-color: #c9c4c4;
     margin-left: 0;
     width: 100%;
     padding: 12px 20px;
     font-size: 14px;
+    font-weight: bold;
   }
 
   .dummy3 p {
