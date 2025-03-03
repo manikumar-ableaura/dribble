@@ -57,5 +57,6 @@ Whether you're a developer exploring React or just someone who loves a well-craf
 👀 Star it. Fork it. Own it. Because why settle for ordinary?
 
 🚀 Let’s build something amazing together!
+```
 
 🔥 Ready to explore? [**Check it out now!**](https://github.com/manikumar-ableaura/dribble) 🔥
