@@ -11,21 +11,21 @@ Dribble isn’t just a project—it’s a **React showcase**. It pushes the boun
 
 ## 🛠️ Key Features  
 
-- ✨ **Real-Time Data Fetching** – Fetches live recipes, products, and quotes from dummyjson.com.  
-- ✨ **Component-Based Architecture** – Clean, reusable React components for scalability.  
-- ✨ **State Management with Hooks** – Uses `useState` and `useEffect` for seamless updates.  
-- ✨ **Smooth & Responsive UI** – Fast, intuitive, and user-friendly experience on all devices.  
-- ✨ **Performance Optimization** – Speed-focused design with efficient API calls & caching strategies.  
+ ✨ **Real-Time Data Fetching** – Fetches live recipes, products, and quotes from dummyjson.com.  
+✨ **Component-Based Architecture** – Clean, reusable React components for scalability.  
+ ✨ **State Management with Hooks** – Uses `useState` and `useEffect` for seamless updates.  
+ ✨ **Smooth & Responsive UI** – Fast, intuitive, and user-friendly experience on all devices.  
+ ✨ **Performance Optimization** – Speed-focused design with efficient API calls & caching strategies.  
 
 ---
 
 ## 🚀 My Contributions  
 
-- 🔹 **Designed & developed** the entire front-end architecture in React.  
-- 🔹 **Integrated & optimized** API requests for smooth, real-time data retrieval.  
-- 🔹 **Implemented state management** using React Hooks (`useState`, `useEffect`).  
-- 🔹 **Enhanced UI & UX**, ensuring a polished, engaging user experience.  
-- 🔹 **Configured project dependencies**, optimizing performance for production.  
+ 🔹 **Designed & developed** the entire front-end architecture in React.  
+ 🔹 **Integrated & optimized** API requests for smooth, real-time data retrieval.  
+ 🔹 **Implemented state management** using React Hooks (`useState`, `useEffect`).  
+ 🔹 **Enhanced UI & UX**, ensuring a polished, engaging user experience.  
+ 🔹 **Configured project dependencies**, optimizing performance for production.  
 
 ---
 
@@ -59,4 +59,7 @@ Whether you're a developer exploring React or just someone who loves a well-craf
 🚀 Let’s build something amazing together!
 ```
 
-🔥 Ready to explore? [**Check it out now!**](https://github.com/manikumar-ableaura/dribble) 🔥
+<p align="center" font-decoration="none">
+  <a href="https://github.com/manikumar-ableaura/dribble"><strong>🔥 Check it out now! 🔥</strong></a>
+</p>
+
