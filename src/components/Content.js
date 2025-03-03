@@ -5,9 +5,6 @@ import './content.css';
 import picture from '../assets/pic2.jpg';
 import villa11 from '../assets/last.jpg';
 import Form from './Form/Form';
-// import wavy from '../assets/wave.png'
-// import logo from '../assets/popuplogo.jpg'
-
 
 
 function Content() {
