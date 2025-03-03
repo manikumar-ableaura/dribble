@@ -112,7 +112,7 @@ body {
     justify-content: center;
     animation: fadeIn 0.3s ease-in-out, fadeOut 0.5s ease-in-out 4.5s;
 }
-/* Popup Body - Adjusted for Better Layout */
+
 .popup-body {
     display: flex;
     align-items: center;
@@ -190,3 +190,27 @@ body {
         overflow-x: hidden;
     }
 }
+
+@media (max-width: 934px) {
+    .popup-body {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /* Adjust gap for better spacing */
+        height: auto; /* Adjust height dynamically */
+    }
+
+    .popup-body img {
+        max-width: 100%; /* Ensure image is responsive */
+        height: auto;
+    }
+
+    .product-details {
+        width: 100%; /* Make it take full width */
+        text-align: center; /* Center text if needed */
+    }
+
+}
+
+
