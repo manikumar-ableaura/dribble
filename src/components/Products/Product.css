@@ -84,8 +84,8 @@ body {
 }
 
 .product-item:hover {
-  background: #56d181;
-  transform: scale(1.05);
+  background: #9ba59fa8;
+  color: #000;
 }
 
 /* Popup Overlay - Slightly Darker for More Focus */
