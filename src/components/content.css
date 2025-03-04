@@ -282,12 +282,14 @@ body {
 }
 
 .villa1 {
+  margin-top: 125px;
   display: flex;
   gap: 16%;
   justify-content: space-between;
 }
 
 .villa1 h4 {
+  margin-top: 70px;
   font-size: 28px;
   font-weight: bold;
 }
@@ -306,7 +308,7 @@ body {
 
 .divider {
   height: 1px;
-  background-color: #e0e0e0;
+  background-color: #00000017;
   margin: 20px 0;
   width: 100%;
 }
@@ -320,6 +322,7 @@ body {
 }
 
 .villa2 h4 {
+  margin-top: 70px;
   font-size: 28px;
   font-weight: bold;
 }
@@ -936,30 +939,31 @@ body {
 
 .bullet-list {
   font-size: 24px;
-  font-family: sour gummy;
+  font-family: "Sour Gummy", sans-serif;
   font-weight: bold;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 36px;
-  padding-left: 20px;
-  width: 97vh;
+  max-width: 90vw; 
   margin: 100px auto;
   cursor: pointer;
   color: #30282eb9;
   border-color: whitesmoke;
+  padding: 0;
 }
 
 .bullet-list li {
-  width: calc(100% / 4- 20px);
+  width: calc(25% - 20px); 
   white-space: nowrap;
+  list-style: none; 
+  text-align: center;
 }
 
 .bullet-list li:hover {
   color: #26a867;
   transition: color 0.3s ease-in-out;
 }
-
 @media (max-width: 1280px) {
   .popup {
     width: 100%;
@@ -1435,7 +1439,7 @@ body {
 
   .last h1 {
     color: #000000 !important;
-    font-size: 26px;
+    font-size: 22px;
     margin-top: 30%;
     line-height: 1.5;
   }
@@ -1807,6 +1811,15 @@ body {
     width: 90%;
     font-size: 18px;
     line-height: 35px;
+  }
+  .bullet-list {
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .bullet-list li {
+    width: calc(50% - 20px); /* 2 items per row */
   }
 }
 

@@ -1,9 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
-// import { FaSearch } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import './content.css';
 import picture from '../assets/pic2.jpg';
-import villa11 from '../assets/last.jpg';
 import Form from './Form/Form';
 
 
@@ -18,6 +16,22 @@ function Content() {
   const popupRef = useRef(null);
 
   const navigate = useNavigate();
+
+  const sectionsRef = {
+    design: useRef(null),
+    architecture: useRef(null),
+    property: useRef(null),
+    kitchen: useRef(null),
+    laneway: useRef(null),
+    block: useRef(null),
+    luxury: useRef(null),
+    discuss: useRef(null),
+    form: useRef(null),
+  };
+
+  const scrollToSection = (section) => {
+    sectionsRef[section]?.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
 
 
@@ -131,18 +145,18 @@ function Content() {
 
         <div className='selector'>
           <ul className='bullet-list'>
-            <li>Design Interior</li>
-            <li>Architecture</li>
-            <li>Property interior</li>
-            <li>Premium kitchen</li>
-            <li>Laneway house</li>
-            <li>Block residance</li>
-            <li>Luxary house</li>
-            <li>Let's Disucuss</li>
-            <li>Send Enquiry</li>
-            <li>Form</li>
+            <li onClick={() => scrollToSection('design')}>Design Interior</li>
+            <li onClick={() => scrollToSection('architecture')}>Architecture</li>
+            <li onClick={() => scrollToSection('property')}>Property Interior</li>
+            <li onClick={() => scrollToSection('kitchen')}>Premium Kitchen</li>
+            <li onClick={() => scrollToSection('laneway')}>Laneway House</li>
+            <li onClick={() => scrollToSection('block')}>Block Residence</li>
+            <li onClick={() => scrollToSection('luxury')}>Luxury House</li>
+            <li onClick={() => scrollToSection('discuss')}>Let's Discuss</li>
+            <li onClick={() => scrollToSection('form')}>Form</li>
           </ul>
         </div>
+
 
         <div className="secondblock">
           <h2>TRANSFORMING IDEAS <br />ARCHITECTURE</h2>
@@ -185,7 +199,7 @@ function Content() {
 
           <div><div className='service'>
             <button>Services</button>
-            <h2>We provide various best ideas to<br></br> transform your ideas</h2>
+            <h2 ref={sectionsRef.design}>We provide various best ideas to<br></br> transform your ideas</h2>
           </div>
           </div>
 
@@ -202,35 +216,22 @@ function Content() {
 
           </div>
         </div>
-        <br></br><br></br><br></br>
-        <div className='fifthblock'>
 
-          <div><div className='service1'></div></div>
+        <div className='fifthblock'>
 
           <div className='villa1'>
             <img
               className="home"
               src='https://images.pexels.com/photos/30560880/pexels-photo-30560880/free-photo-of-ornate-interior-of-historic-mosque-with-elaborate-ceiling.jpeg?auto=compress&cs=tinysrgb&w=600'
               alt="temporary" />
-
-            <h4>Architecture</h4>
-
+            <h4 ref={sectionsRef.architecture}>Architecture</h4>
             <p>Architecture is the process and product of planning, designing, and construction of buildings or other structures</p>
           </div>
         </div>
 
-        <br></br>
-        <div className="section">
-
-        </div>
-
         <div className="divider"></div>
 
-        <div className="section">
-
-        </div>
-
-        <div className='fifthblock'>
+              <div className='fifthblock'>
 
           <div><div className='service2'></div></div>
 
@@ -240,7 +241,7 @@ function Content() {
               src='https://media.istockphoto.com/id/1254796539/photo/green-living-room-with-green-sofa-coffee-tables-and-plants.jpg?s=2048x2048&w=is&k=20&c=FCq1HLZx-dn2eP-SM4rjA5ra_xGnEOF80xfqv6sJwnU='
               alt="temporary" />
 
-            <h4>Property Interior</h4>
+            <h4 ref={sectionsRef.property}>Property Interior</h4>
 
             <p>The Interior of a room in the form of a physical Arrangement, such as furniture, To meet the facility needs of the room</p>
           </div>
@@ -260,14 +261,14 @@ function Content() {
           </div>
           <div>
             <div className="no1">
-              <img
+              <img ref={sectionsRef.laneway}
                 className="img1"
                 src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Loading"
               />
 
               <div className="contents">
-                <img
+                <img ref={sectionsRef.kitchen}
                   className="img2"
                   src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="Loading"
@@ -283,7 +284,7 @@ function Content() {
                 <p> Canada / Architecture</p>
               </div>
               <div className='merge-in'>
-                <img
+                <img ref={sectionsRef.block}
                   className='img3'
                   src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt='Loading'
@@ -296,7 +297,7 @@ function Content() {
 
             <div className='no3'>
               <div className='merge1'>
-                <img
+                <img ref={sectionsRef.luxury}
                   className='img4'
                   src='https://images.pexels.com/photos/271795/pexels-photo-271795.jpeg?auto=compress&cs=tinysrgb&w=600'
                   alt='Loading...' />
@@ -363,7 +364,7 @@ function Content() {
         </div>
 
 
-        <div className='last'><h1>Looking For Someone Who Can <br></br> Transforming Ideas?</h1>
+        <div className='last'><h1 ref={sectionsRef.discuss}>Looking For Someone Who Can <br></br> Transforming Ideas?</h1>
           <button className='discuss' onClick={pagetodiscuss}>Let's Discuss</button>
         </div>
 
@@ -371,7 +372,7 @@ function Content() {
         <div className='villa11'>
           <img
             className="captive"
-            src={villa11}
+            src="https://www.rpsgroup.com/imported-media/2467/landscape-architecture-martin-brothers-1600x1000.jpg?width=990&height=593&quality=90"
             alt="loading" />
         </div>
 
@@ -406,7 +407,7 @@ function Content() {
         <div className="divider9"></div>
         <div className="divider10"></div>
         <div className='form-dadpop'>
-          <button className='form-pop' onClick={() => Setform(true)}> Form </button>
+          <button className='form-pop' onClick={() => Setform(true)} ref={sectionsRef.form}> Form </button>
         </div>
 
         {form && (
