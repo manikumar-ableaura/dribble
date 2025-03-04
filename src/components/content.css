@@ -15,7 +15,7 @@ body {
 
 .content-image {
   width: 600px;
-  height: 500px;
+  height: 100px;
 
 }
 
@@ -828,8 +828,8 @@ body {
 
 .Hero {
   position: relative;
-  width: 100%;
-  height: 400px;
+  width: 100vw;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -945,7 +945,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 36px;
-  max-width: 90vw; 
+  max-width: 90vw;
   margin: 100px auto;
   cursor: pointer;
   color: #30282eb9;
@@ -954,9 +954,9 @@ body {
 }
 
 .bullet-list li {
-  width: calc(25% - 20px); 
+  width: calc(25% - 20px);
   white-space: nowrap;
-  list-style: none; 
+  list-style: none;
   text-align: center;
 }
 
@@ -964,6 +964,7 @@ body {
   color: #26a867;
   transition: color 0.3s ease-in-out;
 }
+
 @media (max-width: 1280px) {
   .popup {
     width: 100%;
@@ -1812,6 +1813,7 @@ body {
     font-size: 18px;
     line-height: 35px;
   }
+
   .bullet-list {
     flex-direction: column;
     font-size: 20px;
@@ -1819,7 +1821,8 @@ body {
   }
 
   .bullet-list li {
-    width: calc(50% - 20px); /* 2 items per row */
+    width: calc(50% - 20px);
+    /* 2 items per row */
   }
 }
 
