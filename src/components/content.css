@@ -387,7 +387,7 @@ body {
 
 
 .no1 h3 {
-  margin-top: -50px!important;
+  margin-top: -50px !important;
   font-size: 32px;
   text-align: right;
 }
@@ -611,7 +611,7 @@ body {
 
 .last h1 {
   font-size: 60px;
-  margin-top: 10%;
+  margin-top: 0%;
 }
 
 .last button {
@@ -678,12 +678,12 @@ body {
 .dummy2 p {
 
   line-height: 0;
-  font-size: 34px;
+  font-size: 30px;
 }
 
 .dummy2 h3 {
-  margin-top: 20px;
-  font-size: 40px;
+  margin-top: -10px;
+  font-size: 26px;
 }
 
 .dummy3 {
@@ -694,11 +694,11 @@ body {
 .dummy3 p {
 
   line-height: 0;
-  font-size: 34px;
+  font-size: 30px;
 }
 
 .dummy3 h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .divider9 {
@@ -801,7 +801,6 @@ body {
   cursor: pointer;
 }
 
-
 .form-pop {
   display: block;
   margin: auto;
@@ -866,14 +865,14 @@ body {
   }
 }
 
-
 .search-popup {
   width: 100%;
-  height: 30%;
-  position: absolute;
-  top: 80px;
+  height: auto;
+  position: fixed;
+  top: 50px;
+  /* Adjust as needed */
   left: 50%;
-  transform: translate(-10%, -10%);
+  transform: translateX(-50%);
   background: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 10px;
@@ -901,7 +900,7 @@ body {
 .pop-logo {
   width: 150px;
   height: 100px;
-  margin-bottom: 10px;
+  z-index: 101;
 }
 
 .search-container {
@@ -921,7 +920,6 @@ body {
   border-radius: 15px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
 }
 
 .close-btn {
@@ -936,8 +934,31 @@ body {
   color: #333;
 }
 
+.bullet-list {
+  font-size: 24px;
+  font-family: sour gummy;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 36px;
+  padding-left: 20px;
+  width: 97vh;
+  margin: 100px auto;
+  cursor: pointer;
+  color: #30282eb9;
+  border-color: whitesmoke;
+}
 
+.bullet-list li {
+  width: calc(100% / 4- 20px);
+  white-space: nowrap;
+}
 
+.bullet-list li:hover {
+  color: #26a867;
+  transition: color 0.3s ease-in-out;
+}
 
 @media (max-width: 1280px) {
   .popup {
@@ -948,23 +969,24 @@ body {
 
 @media (max-width: 934px) {
   .container {
-    flex-direction: column; 
-    font-size: 14px; 
+    flex-direction: column;
+    font-size: 14px;
   }
 
-  .no1{
-    gap: 0px!important;
+  .no1 {
+    gap: 0px !important;
   }
 
-  .no1 .img1{
+  .no1 .img1 {
     width: 100%;
     margin-top: 0px;
   }
 
-  .no1 h3{
+  .no1 h3 {
     text-align: center;
   }
-  .no1 p{
+
+  .no1 p {
     text-align: center;
   }
 
@@ -972,32 +994,37 @@ body {
     width: 100%;
     margin: 0px;
   }
-  .merge-in h3{
-    text-align: center;
-  }
-  .merge-in p{
+
+  .merge-in h3 {
     text-align: center;
   }
 
-  .merge2{
+  .merge-in p {
+    text-align: center;
+  }
+
+  .merge2 {
     width: auto;
   }
 
   .ninthblock p {
-    font-size: 12px!important;
+    font-size: 12px !important;
   }
 
-  .no2 .img3{
+  .no2 .img3 {
     margin: auto;
   }
-  .villa{
+
+  .villa {
     flex-direction: column;
   }
-  .villa img{
+
+  .villa img {
     margin: auto;
-    width: 400px!important;
+    width: 400px !important;
   }
-  .villa h4{
+
+  .villa h4 {
     text-align: center;
   }
 }
@@ -1098,7 +1125,7 @@ body {
   .secondblock h2 {
     margin: auto;
     margin-top: 50px;
-    font-size: 34px !important;
+    font-size: 30px !important;
     text-align: center;
   }
 
@@ -1118,7 +1145,7 @@ body {
     margin: 10px auto 50px auto;
     line-height: 36px;
     font-size: 16px;
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 
@@ -1258,7 +1285,7 @@ body {
   }
 
   .service h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 50px;
     text-align: center;
   }
@@ -1268,9 +1295,9 @@ body {
   }
 
   .villa p {
-    width: 100%;
+    width: 90% !important;
     text-align: center;
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .villa1 .home {
@@ -1469,9 +1496,10 @@ body {
     margin-left: 100px;
     float: left;
     padding: 10px 20px;
+    align-items: center;
     border-color: #e1dcdc;
-    color: rgb(40, 40, 40);
-    border: 2px solid #c9c4c4;
+    color: rgb(255, 255, 255) !important;
+    border: 2px solid #000000 !important;
     border-radius: 99px;
     font-size: 15px;
     cursor: pointer;
@@ -1548,7 +1576,7 @@ body {
   }
 
   .dummy2 h3 {
-    font-size: 22px!important;
+    font-size: 20px !important;
   }
 
   .dummy3 p {
@@ -1558,7 +1586,7 @@ body {
   }
 
   .dummy3 h4 {
-    font-size: 16px!important;
+    font-size: 14px !important;
   }
 
   .villa7 h2 {
@@ -1582,13 +1610,13 @@ body {
 
   .project-heading {
     margin-top: 50px;
-    font-size: 23px !important;
+    font-size: 20px !important;
     text-align: center;
 
   }
 
   .no1 .img1 {
-    margin-top: auto;
+    margin-top: 50px !important;
     width: 100%;
     height: auto;
     padding-top: 0px;
@@ -1604,7 +1632,7 @@ body {
   }
 
   .no1 h3 {
-    margin-top: 0px!important;
+    margin-top: 0px !important;
     padding: 0px 40px;
     /* Further reduce padding */
     font-size: 24px;
@@ -1645,7 +1673,7 @@ body {
 
   .merge p {
     width: 100%;
-    margin-top: -16px !important;
+    margin-top: -21px !important;
     font-size: 14px !important;
     text-align: center;
   }
@@ -1721,7 +1749,6 @@ body {
     font-size: 14px;
     padding: 0px 30px;
     height: 36px;
-    border-color: #afacab;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
     cursor: pointer;
 
@@ -1751,12 +1778,6 @@ body {
     height: auto;
   }
 
-  .child1 button {
-    margin-left: 20px;
-    width: 100%;
-    text-align: center;
-  }
-
   .child1 h2 {
     text-align: center !important;
     font-size: 36px;
@@ -1783,7 +1804,7 @@ body {
 
 
   .content {
-    width: 100%;
+    width: 90%;
     font-size: 18px;
     line-height: 35px;
   }

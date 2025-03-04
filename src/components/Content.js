@@ -38,7 +38,7 @@ function Content() {
     navigate('/quotes');
   };
 
-  const handleProductNavigation =() =>{
+  const handleProductNavigation = () => {
     navigate('/Products')
   }
 
@@ -118,7 +118,6 @@ function Content() {
       </div>
 
 
-
       <div className='container'>
 
         <h1> Hey Pookies!</h1>
@@ -130,6 +129,20 @@ function Content() {
 
         <button className="gumroad-button" onClick={handlenavigation}>Food Menu</button>
 
+        <div className='selector'>
+          <ul className='bullet-list'>
+            <li>Design Interior</li>
+            <li>Architecture</li>
+            <li>Property interior</li>
+            <li>Premium kitchen</li>
+            <li>Laneway house</li>
+            <li>Block residance</li>
+            <li>Luxary house</li>
+            <li>Let's Disucuss</li>
+            <li>Send Enquiry</li>
+            <li>Form</li>
+          </ul>
+        </div>
 
         <div className="secondblock">
           <h2>TRANSFORMING IDEAS <br />ARCHITECTURE</h2>
