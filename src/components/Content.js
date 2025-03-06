@@ -174,14 +174,14 @@ function Content() {
 
           <div>
             <div className='About'>
-              <button className='Sayings' onClick={handleAboutNavigation}> About us </button>
+              <button className='Sayings' onClick={handleAboutNavigation}> Quotes & Sayings</button>
             </div>
             <h2>Agency in the field of<br></br> architecture</h2>
             <p>Experience Archtectural ingeniuty: As a leading agecny in the field of architecture,
               We bring visionary concepts to life through cutting-edge design and technical mastery</p>
 
             <div className='see'>
-              <button className='Products' onClick={handleProductNavigation}> See More </button>
+              <button className='Products' onClick={handleProductNavigation}> Products </button>
             </div>
           </div>
 
@@ -387,7 +387,7 @@ function Content() {
 
         <div className='dummy2'>
           <p>Or drop us a line:</p>
-          <h3>manikumarsrinivasan.proton.me</h3>
+          <h3>manikumar@ableaura.com</h3>
         </div>
 
         <div className="dummy3">

@@ -136,9 +136,6 @@ body {
   color: rgb(0, 0, 0);
 }
 
-
-
-
 .About button {
   display: block;
   justify-content: center;
@@ -146,12 +143,19 @@ body {
   height: 40px;
   margin: -50px 0px 100px 0px;
   padding: 10px 20px;
-  border-color: #000000;
   color: rgb(0, 0, 0);
   border: 1.5px solid black;
   border-radius: 99px;
   font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.About button:hover{
+  background-color: #c1dce4;
+  color: #000;
+
 }
 
 .thirdblock {
@@ -186,13 +190,21 @@ body {
   height: 40px;
   margin-top: 40px;
   padding: 10px 20px;
+  border: 1.5px solid black;
   background-color: #000000;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
   color: #ffffff;
   border-radius: 99px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.see button:hover{
+  background-color: #adb6b200;
+  color: #000;
+
 }
 
 .picture {
@@ -1111,7 +1123,7 @@ body {
     padding: 0px;
     margin-right: 0px;
     margin-left: 0px;
-    margin-top: -150px;
+    margin-top: -50px;
   }
 
   .secondblock {
@@ -1265,7 +1277,7 @@ body {
   .About button {
     display: block;
     margin: auto;
-    width: 30%;
+    width: auto;
     height: auto;
   }
 
@@ -1450,7 +1462,7 @@ body {
     width: 100%;
     text-align: center;
     line-height: 36px;
-    font-size: 20px;
+    font-size: 16px!important;
   }
 
   .dupsix {
@@ -1592,6 +1604,7 @@ body {
 
   .dummy3 h4 {
     font-size: 14px !important;
+    margin-top: -16px;
   }
 
   .villa7 h2 {
@@ -1826,8 +1839,16 @@ body {
   }
 }
 
+.search {
+  top: 15px;  
+  right: 15px; 
+  padding: 6px 10px; 
+  font-size: 12px;
+  border-radius: 10px; 
+}
 
-/* Responsive adjustments */
+
+
 
 @media (max-width: 1200px) {
   .ninthblock p {
