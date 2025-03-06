@@ -39,7 +39,7 @@ function Product() {
    
         const timer = setTimeout(() => {
             setSelectedProduct(null);
-        }, 50000);
+        }, 5000);
         setPopupTimer(timer);
     };
 
