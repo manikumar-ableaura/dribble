@@ -103,7 +103,7 @@ body {
 }
 /* Popup Content - Bigger & More Spacious */
 .popup-content {
-  background: rgb(112, 117, 138);
+  background: rgba(112, 116, 138, 0.911);
   padding: 30px;
   border-radius: 12px;
   text-align: center;
