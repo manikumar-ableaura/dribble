@@ -103,7 +103,7 @@ body {
 }
 /* Popup Content - Bigger & More Spacious */
 .popup-content {
-  background: rgba(234, 235, 240, 0.658);
+  background: rgb(112, 117, 138);
   padding: 30px;
   border-radius: 12px;
   text-align: center;
@@ -129,7 +129,7 @@ body {
 
 /* Enlarged Product Image */
 .popup-body img {
-  background-color: rgba(88, 110, 50, 0.712);
+  background-color: rgba(201, 201, 196, 0.384);
   width: 320px; /* Slightly Larger */
   height: 320px; /* Set Height for Consistency */
   border-radius: 10px;
@@ -140,7 +140,7 @@ body {
 /* Product Details - Adjusted for Readability */
 .product-details {
   width: 250px;
-  background-color: rgba(88, 110, 50, 0.205);
+  background-color: rgba(255, 255, 255, 0.616);
   border-radius: 10px;
   padding-left: 30px;
   text-align: left;
@@ -159,7 +159,7 @@ body {
 .product-details p {
   margin: 5px 0;
   font-size: 15px;
-  color: #444;
+  color: #000000;
 }
 
 /* 🔹 Mobile Responsive Design */
@@ -171,7 +171,7 @@ body {
   .popup-content {
     width: 90%; /* More Width for Small Screens */
     height: auto; /* Auto Height for Better Adjustment */
-    max-height: 90vh; /* Prevents Full Screen Overflow */
+    max-height: 100vh; /* Prevents Full Screen Overflow */
   }
 
   .popup-body {
