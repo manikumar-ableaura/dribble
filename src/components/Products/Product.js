@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Product.css";
-import HandAnimation from "../Quotes/HandAnimation";
+import Spinner from "../Quotes/Spinner";
 
 function Product() {
     const [products, setProducts] = useState([]);
@@ -20,7 +20,7 @@ function Product() {
                 setTimeout(() => {
                     setProducts(data.products);
                     setLoading(false);
-                }, 3000);
+                }, 5000);
             })
             .catch((error) => {
                 console.error(error);
@@ -31,19 +31,18 @@ function Product() {
     const handleProductClick = (product) => {
         setSelectedProduct(product);
 
-        // Clear existing timer if user clicks another product
+
         if (popupTimer) {
             clearTimeout(popupTimer);
         }
 
-        // Set a new timer to close the popup after 5 seconds
+   
         const timer = setTimeout(() => {
             setSelectedProduct(null);
         }, 5000);
         setPopupTimer(timer);
     };
 
-    // Close popup when clicking outside
     const handleClosePopup = (e) => {
         if (e.target.classList.contains("popup-overlay")) {
             setSelectedProduct(null);
@@ -54,7 +53,7 @@ function Product() {
     if (loading) {
         return (
             <div className="loading-container">
-                <HandAnimation />
+                <Spinner />
             </div>
         );
     }

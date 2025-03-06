@@ -387,7 +387,7 @@ function Content() {
 
         <div className='dummy2'>
           <p>Or drop us a line:</p>
-          <h3>manikumar@ableaura.com</h3>
+          <h3>manikumar@ableaura</h3>
         </div>
 
         <div className="dummy3">
