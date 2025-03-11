@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dribble/static/css/main.ef7b9c11.css",
+    "main.css": "/dribble/static/css/main.b6e48730.css",
     "main.js": "/dribble/static/js/main.53de3a7b.js",
     "static/media/neymar-brazil.jpg": "/dribble/static/media/neymar-brazil.9b2a177e348551ddf651.jpg",
     "static/media/pic2.jpg": "/dribble/static/media/pic2.3cb76c0f1d209701dc7e.jpg",
     "index.html": "/dribble/index.html",
-    "main.ef7b9c11.css.map": "/dribble/static/css/main.ef7b9c11.css.map",
+    "main.b6e48730.css.map": "/dribble/static/css/main.b6e48730.css.map",
     "main.53de3a7b.js.map": "/dribble/static/js/main.53de3a7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef7b9c11.css",
+    "static/css/main.b6e48730.css",
     "static/js/main.53de3a7b.js"
   ]
 }
