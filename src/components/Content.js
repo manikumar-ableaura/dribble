@@ -4,16 +4,18 @@ import './content.css';
 import picture from '../assets/pic2.jpg';
 import Form from './Form/Form';
 
-
 function Content() {
 
-  const [form, Setform] = useState(false);
+  const [form, setform] = useState(false);
 
   const [searchQuery, setSearchQuery] = useState('');
 
   const [isSearch, setIsSearch] = useState(false);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const popupRef = useRef(null);
+  const menuRef = useRef(null);  
 
   const navigate = useNavigate();
 
@@ -31,9 +33,13 @@ function Content() {
 
   const scrollToSection = (section) => {
     sectionsRef[section]?.current?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
   };
 
-
+  const toggleMenu = () => {
+    console.log("Hamburger menu clicked!");
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const pagetodiscuss = () => {
     navigate('/discuss');
@@ -42,8 +48,8 @@ function Content() {
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
     console.log("User Searched for : ", e.target.value);
-
   }
+
   const handlenavigation = () => {
     navigate('/shopping');
   };
@@ -53,7 +59,7 @@ function Content() {
   };
 
   const handleProductNavigation = () => {
-    navigate('/Products')
+    navigate('/Products');
   }
 
   const scrollToBottom = () => {
@@ -80,16 +86,19 @@ function Content() {
       if (popupRef.current && !popupRef.current.contains(event.target)) {
         closePopup();
       }
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
     };
 
-    if (isSearch) {
+    if (isSearch || isMenuOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [isSearch]);
+  }, [isSearch, isMenuOpen]);
 
 
   return (
@@ -135,6 +144,26 @@ function Content() {
       <div className='container'>
 
         <h1> Hey Pookies!</h1>
+        <div className='hamburger-menu'>
+          <button className='hamburger-button' onClick={toggleMenu}>
+            ☰
+          </button>
+          <div ref={menuRef} className={`menu ${isMenuOpen ? 'open' : ''}`}>
+          {console.log("Menu open state:", isMenuOpen)}
+            <ul className="menu-dropdown">
+              <li onClick={() => scrollToSection('design')}>Design Interior</li>
+              <li onClick={() => scrollToSection('architecture')}>Architecture</li>
+              <li onClick={() => scrollToSection('property')}>Property Interior</li>
+              <li onClick={() => scrollToSection('kitchen')}>Premium Kitchen</li>
+              <li onClick={() => scrollToSection('laneway')}>Laneway House</li>
+              <li onClick={() => scrollToSection('block')}>Block Residence</li>
+              <li onClick={() => scrollToSection('luxury')}>Luxury House</li>
+              <li onClick={() => scrollToSection('discuss')}>Let's Discuss</li>
+              <li onClick={() => scrollToSection('form')}>Form</li>
+            </ul>
+          </div>
+        </div>
+
 
         <p className="content">
           In this shot, we're providing a sneak peek of the ARCHIVTS homepage. Our focus for this homepage is to ensure that when users first visit the website.
@@ -142,21 +171,6 @@ function Content() {
         </p>
 
         <button className="gumroad-button" onClick={handlenavigation}>Food Menu</button>
-
-        <div className='selector'>
-          <ul className='bullet-list'>
-            <li onClick={() => scrollToSection('design')}>Design Interior</li>
-            <li onClick={() => scrollToSection('architecture')}>Architecture</li>
-            <li onClick={() => scrollToSection('property')}>Property Interior</li>
-            <li onClick={() => scrollToSection('kitchen')}>Premium Kitchen</li>
-            <li onClick={() => scrollToSection('laneway')}>Laneway House</li>
-            <li onClick={() => scrollToSection('block')}>Block Residence</li>
-            <li onClick={() => scrollToSection('luxury')}>Luxury House</li>
-            <li onClick={() => scrollToSection('discuss')}>Let's Discuss</li>
-            <li onClick={() => scrollToSection('form')}>Form</li>
-          </ul>
-        </div>
-
 
         <div className="secondblock">
           <h2>TRANSFORMING IDEAS <br />ARCHITECTURE</h2>
@@ -231,7 +245,7 @@ function Content() {
 
         <div className="divider"></div>
 
-              <div className='fifthblock'>
+        <div className='fifthblock'>
 
           <div><div className='service2'></div></div>
 
@@ -407,15 +421,15 @@ function Content() {
         <div className="divider9"></div>
         <div className="divider10"></div>
         <div className='form-dadpop'>
-          <button className='form-pop' onClick={() => Setform(true)} ref={sectionsRef.form}> Form </button>
+          <button className='form-pop' onClick={() => setform(true)} ref={sectionsRef.form}> Form </button>
         </div>
 
         {form && (
           <div className='popup'>
-            <Form onClose={() => Setform(false)} />
+            <Form onClose={() => setform(false)} />
           </div>
         )}
-      </div>
+      </div >
     </>
   )
 }

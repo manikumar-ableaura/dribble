@@ -152,7 +152,7 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-.About button:hover{
+.About button:hover {
   background-color: #c1dce4;
   color: #000;
 
@@ -201,7 +201,7 @@ body {
   transition: background-color 0.5s ease-in-out;
 }
 
-.see button:hover{
+.see button:hover {
   background-color: #adb6b200;
   color: #000;
 
@@ -913,6 +913,7 @@ body {
 }
 
 .pop-logo {
+  cursor: pointer;
   width: 150px;
   height: 100px;
   z-index: 101;
@@ -949,33 +950,94 @@ body {
   color: #333;
 }
 
-.bullet-list {
-  font-size: 24px;
-  font-family: "Sour Gummy", sans-serif;
-  font-weight: bold;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 36px;
-  max-width: 90vw;
-  margin: 100px auto;
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  margin-top: -120px;
+  margin-right: -50px;
+  float: inline-end;
+  font-size: 18px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.hamburger-button {
+  background: transparent;
+  border: none;
   cursor: pointer;
-  color: #30282eb9;
-  border-color: whitesmoke;
+  padding: 10px;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: auto;
+  width: 200px;
+  background-color: #222;
+  border: 1px solid #555;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.menu.open {
+  right: 0px;
+  border-radius: 8px;
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-dropdown {
+  font-family: sour gummy;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-dropdown li {
+  padding: 10px 15px;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+}
+
+.menu-dropdown li:hover {
+  font-size: smaller;
+  transform: scale(1.1);
+  background-color: #555;
+}
+
+
+.menu-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.menu-dropdown li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.menu-list {
+  cursor: pointer;
+  list-style: none;
   padding: 0;
 }
 
-.bullet-list li {
-  width: calc(25% - 20px);
-  white-space: nowrap;
-  list-style: none;
-  text-align: center;
+.menu-list li {
+  background-color: #314c6b;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
 }
 
-.bullet-list li:hover {
-  color: #26a867;
-  transition: color 0.3s ease-in-out;
+.menu-list li:hover {
+  background: #444;
 }
+
+
 
 @media (max-width: 1280px) {
   .popup {
@@ -1462,7 +1524,7 @@ body {
     width: 100%;
     text-align: center;
     line-height: 36px;
-    font-size: 16px!important;
+    font-size: 16px !important;
   }
 
   .dupsix {
@@ -1820,35 +1882,63 @@ body {
     justify-content: center;
   }
 
-
   .content {
     width: 90%;
     font-size: 18px;
     line-height: 35px;
   }
 
-  .bullet-list {
-    flex-direction: column;
-    font-size: 20px;
-    align-items: center;
+  .search {
+    top: 15px;
+    right: 15px;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 10px;
   }
 
-  .bullet-list li {
-    width: calc(50% - 20px);
-    /* 2 items per row */
+  .hamburger-menu {
+    position: relative;
+    top: -382px;
+    right: 0px;
+    float: inline-start;
+    margin: 0;
+    z-index: 1000;
+  }
+
+  .hamburger-button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    padding: 5px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 10px;
+    width: 100%;
+    border-radius: 12px;
+    
+  }
+
+  .menu.open {
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in;
+    max-height: max-content;
+    width: max-content;
+    right: 0;
+  }
+
+  .menu-dropdown li {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .menu-list li {
+    padding: 12px;
+    text-align: center;
   }
 }
-
-.search {
-  top: 15px;  
-  right: 15px; 
-  padding: 6px 10px; 
-  font-size: 12px;
-  border-radius: 10px; 
-}
-
-
-
 
 @media (max-width: 1200px) {
   .ninthblock p {
