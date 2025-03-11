@@ -109,6 +109,7 @@ function Content() {
           src="https://able-email-media.s3.amazonaws.com/common/logo_main.svg"
           alt="Preview of ARCHIVTS homepage"
         />
+        
         <input
           type='text'
           placeholder='search...'

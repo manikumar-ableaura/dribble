@@ -1,5 +1,8 @@
-body {
+:root {
+  --primary-color: rgb(0, 0, 0);
+}
 
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -16,7 +19,6 @@ body {
 .content-image {
   width: 600px;
   height: 100px;
-
 }
 
 .content {
@@ -35,7 +37,6 @@ body {
   margin-top: 50px;
   padding-top: 50px;
 }
-
 
 .secondblock {
   display: flex;
@@ -97,10 +98,7 @@ body {
 .Arrowclass {
   display: flex;
   justify-content: center;
-
 }
-
-
 
 .arrow-circle::after {
   content: "▼";
@@ -108,15 +106,11 @@ body {
   color: rgb(0, 0, 0);
 }
 
-
-
 .Arrows {
   display: flex;
   justify-content: center;
   margin: 80px 0px -80px 0px;
-
 }
-
 
 .arrowscircle {
   cursor: pointer;
@@ -155,7 +149,6 @@ body {
 .About button:hover {
   background-color: #c1dce4;
   color: #000;
-
 }
 
 .thirdblock {
@@ -166,7 +159,6 @@ body {
   line-height: 50px;
   align-items: center;
   justify-content: center;
-
 }
 
 .thirdblock h2 {
@@ -204,7 +196,6 @@ body {
 .see button:hover {
   background-color: #adb6b200;
   color: #000;
-
 }
 
 .picture {
@@ -242,9 +233,7 @@ body {
   ;
 }
 
-
 .fourthblock {
-
   font-size: 30px;
   text-align: left;
 }
@@ -290,7 +279,6 @@ body {
   color: #e7e7e9;
   line-height: 1.5;
   text-align: left;
-
 }
 
 .villa1 {
@@ -325,8 +313,6 @@ body {
   width: 100%;
 }
 
-
-
 .villa2 {
   display: flex;
   gap: 16%;
@@ -353,7 +339,6 @@ body {
 
 .project-heading {
   font-size: 40px;
-
 }
 
 .new button {
@@ -371,15 +356,11 @@ body {
   cursor: pointer;
 }
 
-
-
 .no1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
 }
-
 
 .no1 .img1 {
   border-radius: 20px;
@@ -390,8 +371,6 @@ body {
   max-width: 100%;
 }
 
-
-
 .no1 .img2 {
   border-radius: 20px;
   margin: 50px;
@@ -399,7 +378,6 @@ body {
   height: 550px;
   object-fit: fill;
 }
-
 
 .no1 h3 {
   margin-top: -50px !important;
@@ -411,7 +389,6 @@ body {
   margin-top: -30px;
   font-size: 18px;
   text-align: right;
-
 }
 
 .no2 {
@@ -425,12 +402,10 @@ body {
   height: 500px;
   margin: 100px 0 0;
   border-radius: 20px;
-
 }
 
 .no2 .merge {
   width: 100%;
-
 }
 
 .merge h3 {
@@ -460,7 +435,6 @@ body {
   text-align: right;
   margin-top: -30px;
   font-size: 18px;
-
 }
 
 .no3 .img4 {
@@ -472,7 +446,6 @@ body {
 .merge1 h3 {
   margin-top: 0px;
   font-size: 32px;
-
 }
 
 .merge1 p {
@@ -480,7 +453,6 @@ body {
   margin-top: -30px;
   font-size: 18px;
   text-align: left;
-
 }
 
 .no3 {
@@ -517,7 +489,6 @@ body {
 }
 
 .pro {
-
   height: 40px;
   margin-top: 40px;
   padding: 10px 20px;
@@ -528,7 +499,6 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-
 
 .villa8 .lative {
   border-radius: 20px;
@@ -600,7 +570,6 @@ body {
   text-align: left;
   line-height: 1.5;
   color: rgb(0, 0, 0);
-
 }
 
 .child1 h2 {
@@ -664,7 +633,6 @@ body {
 
 .graph p {
   font-size: 35px;
-
 }
 
 .dummy button {
@@ -691,7 +659,6 @@ body {
 }
 
 .dummy2 p {
-
   line-height: 0;
   font-size: 30px;
 }
@@ -707,7 +674,6 @@ body {
 }
 
 .dummy3 p {
-
   line-height: 0;
   font-size: 30px;
 }
@@ -749,7 +715,6 @@ body {
 }
 
 .robo p {
-
   font-size: 18px;
   margin: 2px 0px;
   color: rgb(0, 0, 0);
@@ -787,7 +752,6 @@ body {
 
 .villa10 {
   width: 20%;
-
 }
 
 .popup {
@@ -804,8 +768,6 @@ body {
   z-index: 999;
   box-sizing: border-box;
 }
-
-
 
 .close-button {
   top: 10px;
@@ -885,7 +847,6 @@ body {
   height: auto;
   position: fixed;
   top: 50px;
-  /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   background: rgb(255, 255, 255);
@@ -952,16 +913,17 @@ body {
 
 .hamburger-menu {
   position: relative;
-  display: inline-block;
-  margin-top: -120px;
-  margin-right: -50px;
-  float: inline-end;
+  display: block;
+  margin-top: -200px;
+  margin-right: -75px;
+  float: right;
   font-size: 18px;
   padding: 10px;
   color: rgb(0, 0, 0);
 }
 
 .hamburger-button {
+  font-size: 24px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -1011,7 +973,6 @@ body {
   background-color: #555;
 }
 
-
 .menu-dropdown li:last-child {
   border-bottom: none;
 }
@@ -1037,16 +998,14 @@ body {
   background: #444;
 }
 
-
-
-@media (max-width: 1280px) {
+@media (max-width:1280px) {
   .popup {
     width: 100%;
     height: 100vh;
   }
 }
 
-@media (max-width: 934px) {
+@media (max-width:934px) {
   .container {
     flex-direction: column;
     font-size: 14px;
@@ -1108,8 +1067,7 @@ body {
   }
 }
 
-
-@media (max-width: 800px) {
+@media (max-width:800px) {
   .popup {
     width: 100%;
     height: 100vh;
@@ -1124,7 +1082,6 @@ body {
 }
 
 @media(max-width:768px) {
-
   .search-popup.show {
     width: 100%;
     height: 90px;
@@ -1164,7 +1121,6 @@ body {
     display: flex;
     justify-content: center;
     margin: 80px 0px -80px 0px;
-
   }
 
   .no1 {
@@ -1189,7 +1145,6 @@ body {
   }
 
   .secondblock {
-
     flex-direction: column;
     margin: 0px;
   }
@@ -1246,7 +1201,6 @@ body {
   .new button {
     margin: auto;
     margin-top: 50px;
-
   }
 
   .villa3 .relative {
@@ -1261,10 +1215,8 @@ body {
     height: auto;
   }
 
-
   .villa5 {
     margin: 20px 0px;
-
   }
 
   .villa5 .ding {
@@ -1333,7 +1285,6 @@ body {
     font-size: 24px;
     margin-bottom: 14px;
     margin-top: 80px;
-
   }
 
   .About button {
@@ -1355,7 +1306,6 @@ body {
     margin-right: 0px;
     margin-bottom: 50px;
   }
-
 
   .service button {
     margin: auto;
@@ -1445,8 +1395,6 @@ body {
     font-size: 17px !important;
     text-align: center;
     line-height: 24px;
-
-
   }
 
   .para p {
@@ -1459,7 +1407,6 @@ body {
   }
 
   .paras p {
-
     text-align: right;
     font-size: 16px;
     line-height: 20px;
@@ -1467,7 +1414,6 @@ body {
   }
 
   .eighthblock button {
-
     height: 40px;
     margin-left: 160px;
     margin-right: 0px;
@@ -1503,13 +1449,11 @@ body {
 
   .tomb {
     padding-top: 0px;
-
   }
 
   .villa11 .captive {
     height: auto;
     width: 100%;
-
   }
 
   .last h1 {
@@ -1532,7 +1476,6 @@ body {
     font-size: 24px;
     font-weight: lighter;
     text-align: center;
-
   }
 
   .dupsix h2 {
@@ -1549,14 +1492,12 @@ body {
     margin: -18px -7px 1px;
   }
 
-
   .robo h4 {
     text-align: left;
     align-items: center;
     font-size: 24px;
     font-weight: lighter;
     margin-bottom: -15px;
-
   }
 
   .robo p {
@@ -1569,7 +1510,6 @@ body {
   }
 
   .child1 button {
-
     height: 40px;
     margin-top: 40px;
     margin-left: 100px;
@@ -1591,7 +1531,6 @@ body {
     background: linear-gradient(to right, transparent, #afacab, transparent);
     margin-bottom: 100px;
   }
-
 
   .seventhblock {
     width: 100%;
@@ -1638,10 +1577,8 @@ body {
     font-size: 20px;
   }
 
-
   .graph p {
     font-size: 16px;
-
   }
 
   .dummy button {
@@ -1692,7 +1629,6 @@ body {
     margin-top: 50px;
     font-size: 20px !important;
     text-align: center;
-
   }
 
   .no1 .img1 {
@@ -1714,10 +1650,8 @@ body {
   .no1 h3 {
     margin-top: 0px !important;
     padding: 0px 40px;
-    /* Further reduce padding */
     font-size: 24px;
     text-align: center;
-    /* Center align for better readability */
   }
 
   .no1 p {
@@ -1763,7 +1697,6 @@ body {
     text-align: center;
     font-size: 24px;
     margin-bottom: 24px;
-
   }
 
   .merge-in p {
@@ -1776,18 +1709,13 @@ body {
 
   .no3 .img4 {
     width: 100%;
-    /* Make it full width */
     height: auto;
-    /* Maintain aspect ratio */
   }
 
   .no3 {
     flex-direction: column;
-    /* Stack items vertically */
     align-items: center;
-    /* Center align */
     gap: 20px;
-    /* Adjust spacing */
   }
 
   .merge1 {
@@ -1798,14 +1726,12 @@ body {
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
-
   }
 
   .merge1 p {
     font-size: 14px;
     text-align: center;
     margin-top: -16px;
-
   }
 
   .merge2 {
@@ -1813,7 +1739,6 @@ body {
     margin-top: 50px;
     align-items: center;
     text-align: center;
-
   }
 
   .merge2 h4 {
@@ -1831,7 +1756,6 @@ body {
     height: 36px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
     cursor: pointer;
-
   }
 
   .summaprocess {
@@ -1919,7 +1843,6 @@ body {
     right: 10px;
     width: 100%;
     border-radius: 12px;
-    
   }
 
   .menu.open {
@@ -1940,7 +1863,7 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width:1200px) {
   .ninthblock p {
     font-size: 18px;
   }
@@ -1950,11 +1873,8 @@ body {
     line-height: normal;
   }
 
-
-
   .graph h2 {
     font-size: 30px;
-
   }
 
   .graph p {
@@ -1980,7 +1900,6 @@ body {
   .villa1 .home {
     width: 100%;
   }
-
 
   .villa1 p {
     width: 100%;
@@ -2101,37 +2020,27 @@ body {
     padding: 0;
     height: 40px;
     width: 100px;
-
   }
 
   .villa11 .captive {
     height: 200px;
-
   }
 }
 
-@media (max-width: 992px) {
-
-
+@media (max-width:992px) {
   .no1 {
     flex-direction: column-reverse;
-    /* Stack elements vertically */
     align-items: center;
-    /* Center items */
   }
-
 
   .no2 {
     flex-direction: column;
-    /* Stack items vertically */
     align-items: center;
-    /* Center align */
   }
 
   .no2 .merge {
     padding-left: 0px;
   }
-
 
   .merge1 {
     width: 100%;
@@ -2152,14 +2061,10 @@ body {
     margin-top: 50px;
   }
 
-
-
   .child1 button {
     font-size: 14px;
     padding: 8px 18px;
   }
-
-
 
   .dummy3 p {
     font-size: 16px;
@@ -2175,19 +2080,15 @@ body {
     height: 45px;
     margin-right: 10px;
   }
-
-
 }
 
-@media (max-width: 480px) {
-
+@media (max-width:480px) {
   .no2 .merge {
     padding-left: 0px;
   }
 
   .no3 {
     gap: 10px;
-    /* Reduce spacing further */
   }
 
   .merge1 {
@@ -2228,7 +2129,6 @@ body {
     font-size: 14px;
     line-height: 30px;
   }
-
 
   .content-image {
     height: auto;
