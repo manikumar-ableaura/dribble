@@ -1,4 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
+import Lottie from 'lottie-react';
+import animationData from '../assets/arrowUpAnimation.json';
+import animationsData from '../assets/arrowDownAnimation.json';
 import { useNavigate } from 'react-router-dom';
 import './content.css';
 import picture from '../assets/pic2.jpg';
@@ -15,7 +18,7 @@ function Content() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const popupRef = useRef(null);
-  const menuRef = useRef(null);  
+  const menuRef = useRef(null);
 
   const navigate = useNavigate();
 
@@ -109,7 +112,7 @@ function Content() {
           src="https://able-email-media.s3.amazonaws.com/common/logo_main.svg"
           alt="Preview of ARCHIVTS homepage"
         />
-        
+
         <input
           type='text'
           placeholder='search...'
@@ -150,7 +153,7 @@ function Content() {
             ☰
           </button>
           <div ref={menuRef} className={`menu ${isMenuOpen ? 'open' : ''}`}>
-          {console.log("Menu open state:", isMenuOpen)}
+            {console.log("Menu open state:", isMenuOpen)}
             <ul className="menu-dropdown">
               <li onClick={() => scrollToSection('design')}>Design Interior</li>
               <li onClick={() => scrollToSection('architecture')}>Architecture</li>
@@ -182,9 +185,19 @@ function Content() {
             </p>
           </div>
         </div>
-        <div className='Arrowclass' onClick={scrollToBottom} >
-          <div className="arrow-circle"></div>
+        <div className='Arrowclass' onClick={scrollToBottom}>
+          <Lottie
+            animationData={animationsData}
+            loop
+            autoplay
+            style={{
+              width: 60,
+              height: 60,
+              cursor: 'pointer'
+            }}
+          />
         </div>
+
         <div className='thirdblock'>
 
           <div>
@@ -413,9 +426,19 @@ function Content() {
             <span className="underline">&nbsp;Behance</span> |
             <span className="underline">&nbsp;Food Menu</span>
           </h4>
-          <div className='Arrows' onClick={scrollToTop} >
-            <div className="arrowscircle"></div>
+          <div className='Arrowclass' onClick={scrollToTop}>
+            <Lottie
+              animationData={animationData}
+              loop
+              autoplay
+              style={{
+                width: 60,
+                height: 60,
+                cursor: 'pointer'
+              }}
+            />
           </div>
+
         </div>
 
 

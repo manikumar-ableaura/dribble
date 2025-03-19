@@ -4,10 +4,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.13.2",
+    "@lottiefiles/dotlottie-web": "^0.41.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^6.3.0",
+    "lottie-react": "^2.4.1",
     "nth-check": "^2.1.1",
     "postcss": "^8.5.3",
     "react": "^18.2.0",
