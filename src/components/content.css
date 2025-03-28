@@ -19,6 +19,7 @@ body {
 .content-image {
   width: 600px;
   height: 100px;
+  cursor: pointer;
 }
 
 .content {
@@ -211,6 +212,12 @@ body {
   width: 100%;
 }
 
+.picture .pics:hover {
+  transition: transform 0.9s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .gumroad-button {
   display: block;
   margin: auto;
@@ -266,6 +273,12 @@ body {
   border-radius: 16px;
 }
 
+.villa img:hover {
+  transition: transform 0.9s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .villa h4 {
   color: #e7e7e9;
   font-size: 34px
@@ -279,6 +292,13 @@ body {
   color: #e7e7e9;
   line-height: 1.5;
   text-align: left;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.villa p:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .villa1 {
@@ -298,6 +318,13 @@ body {
   height: 185px;
   width: 225px;
   border-radius: 16px;
+}
+
+.villa1 .home:hover {
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+
 }
 
 .villa1 p {
@@ -329,6 +356,12 @@ body {
   height: 185px;
   width: 225px;
   border-radius: 16px;
+}
+
+.villa2 .dome:hover {
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .villa2 p {
@@ -369,6 +402,13 @@ body {
   height: 475px;
   object-fit: cover;
   max-width: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.no1 .img1:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .no1 .img2 {
@@ -377,6 +417,13 @@ body {
   width: 93%;
   height: 550px;
   object-fit: fill;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.no1 .img2:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .no1 h3 {
@@ -402,6 +449,13 @@ body {
   height: 500px;
   margin: 100px 0 0;
   border-radius: 20px;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.no2 .img3:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .no2 .merge {
@@ -441,6 +495,13 @@ body {
   border-radius: 20px;
   width: 100%;
   height: 425px;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.no3 .img4:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .merge1 h3 {
@@ -468,6 +529,13 @@ body {
   width: 100%;
   height: 320px;
   object-fit: cover;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.no3 .img5:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .merge1 {
@@ -505,6 +573,13 @@ body {
   height: 430px;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.villa8 .lative:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .summaprocess {
@@ -545,6 +620,14 @@ body {
   height: 430px;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.villa9 .plative:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+
 }
 
 .villa10 .clative {
@@ -552,6 +635,14 @@ body {
   height: 430px;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.villa10 .clative:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+
 }
 
 .ninthblock {
@@ -620,7 +711,16 @@ body {
   width: 100%;
   height: 500px;
   margin-top: 100px;
-  border-radius: 50px;
+  border-radius: 25px;
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.villa11 .captive:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+
+
 }
 
 .graph {
@@ -864,7 +964,7 @@ body {
 }
 
 .search-popup.show {
-  height: auto;
+  height: 125px;
   position: fixed;
   top: 0;
   left: 0;
@@ -913,14 +1013,15 @@ body {
 
 .hamburger-menu {
   position: relative;
-  display: block;
-  margin-top: -200px;
-  margin-right: -75px;
+  display: inline-block;
   float: right;
   font-size: 18px;
   padding: 10px;
   color: rgb(0, 0, 0);
+  margin-right: -75px;
+  margin-top: -200px;
 }
+
 
 .hamburger-button {
   font-size: 24px;
@@ -928,49 +1029,50 @@ body {
   border: none;
   cursor: pointer;
   padding: 10px;
+  color: #000000;
 }
+
 
 .menu {
   position: absolute;
   top: 100%;
-  left: auto;
-  width: 200px;
+  right: 0;
+  width: 220px;
   background-color: #222;
   border: 1px solid #555;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
   overflow: hidden;
   max-height: 0;
   opacity: 0;
   visibility: hidden;
-  transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+  transition: max-height 0.7s ease-in-out, opacity 0.9s ease-in-out, visibility 0.6s ease-in-out;
 }
 
-.menu.open {
-  right: 0px;
-  border-radius: 8px;
+.hamburger-menu:hover .menu {
   max-height: 500px;
   opacity: 1;
   visibility: visible;
 }
 
 .menu-dropdown {
-  font-family: sour gummy;
+  font-family: "Sour Gummy", sans-serif;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .menu-dropdown li {
-  padding: 10px 15px;
+  padding: 12px 18px;
   color: #fff;
   cursor: pointer;
   border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .menu-dropdown li:hover {
-  font-size: smaller;
-  transform: scale(1.1);
-  background-color: #555;
+  transform: scale(1.05);
+  background-color: #444;
 }
 
 .menu-dropdown li:last-child {
@@ -997,6 +1099,26 @@ body {
 .menu-list li:hover {
   background: #444;
 }
+
+.carousel-container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.msgcon {
+  text-align: center;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.msgcon h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 @media (max-width:1280px) {
   .popup {
